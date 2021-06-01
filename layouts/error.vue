@@ -6,15 +6,18 @@
     <h1 v-else>
       {{ otherError }}
     </h1>
-    <NuxtLink to="/">
-      Home page
-    </NuxtLink>
+    <img
+      src="/cake1.jpg"
+      alt="A cake"
+      class="mb-5"
+      style="max-width: 400px"
+    >
   </v-app>
 </template>
 
 <script>
 export default {
-  layout: 'empty',
+  layout: 'default',
   props: {
     error: {
       type: Object,
@@ -23,7 +26,7 @@ export default {
   },
   data () {
     return {
-      pageNotFound: '404 Not Found',
+      pageNotFound: '404 page not found',
       otherError: 'An error occurred'
     }
   },
