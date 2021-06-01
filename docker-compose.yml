@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  nuxt:
+    build: .
+    restart: on-failure
+    ports:
+      - "3000:3000"
+    command: "yarn run dev"
+    volumes:
+      - ./:/src
+      - /src/node_modules

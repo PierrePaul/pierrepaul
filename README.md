@@ -1,20 +1,8 @@
-# pierrepaul
+Welcome!
+=======
 
-## Build Setup
+I'm a cool human being. You can refer to me as he/him. My first name is actually `Pierre-Paul` (_pee-ai-r-eh peh-l_), not `Pierre`. You don't really need to remember my last name, Pierre-Paul is more than enough.
 
-```bash
-# install dependencies
-$ yarn install
+I like python, but I've worked a lot with PHP in the past. I'm also a very curious person, rust is very tempting at the moment, but I'm short on time.
 
-# serve with hot reload at localhost:3000
-$ yarn dev
-
-# build for production and launch server
-$ yarn build
-$ yarn start
-
-# generate static project
-$ yarn generate
-```
-
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+Feel free to browser my profile or send me an e-mail. Always open to a coffee chat.
