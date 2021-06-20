@@ -1,0 +1,17 @@
+Title: GitlabHQ 
+Date: 2013-01-02
+Category: DevOps
+Tags: Git, Gitlab, Open-source, Contribution 
+Slug: gitlabhq
+cover: images/2013/gitlab.png
+Summary: <p>Tout le monde connait maintenant <a href="http://en.wikipedia.org/wiki/Github">github</a>. Le site est principalement utilisé pour la gestion du code de projets open-source. <a href="http://www.github.com">Github</a> offre la possibilité d'avoir des comptes payants, qui permette aux utilisateurs de créer des projets qui sont privés. Vous pouvez donc gérer les droits d'accès sur chaque projet. Le seul problème, c'est qu'il faut <a href="https://github.com/plans">payer</a>. Pour 7$ par mois vous pouvez avoir jusqu'à 5 projets privés et 12$ pour gérer jusqu'à 10 projets privés.</p>
+
+<p>Tout le monde connait maintenant <a href="http://en.wikipedia.org/wiki/Github">github</a>. Le site est principalement utilisé pour la gestion du code de projets open-source. <a href="http://www.github.com">Github</a> offre la possibilité d'avoir des comptes payants, qui permette aux utilisateurs de créer des projets qui sont privés. Vous pouvez donc gérer les droits d'accès sur chaque projet. Le seul problème, c'est qu'il faut <a href="https://github.com/plans">payer</a>. Pour 7$ par mois vous pouvez avoir 5 projets privés et 12$ pour gérer jusqu'à 10 projets privés.</p>
+<p>J'utilise énormement git. Pour mes configurations personnelles, mes articles de blogue ou encore n'importe quel projet test que je commence pour le plaisir. Cinq projets par mois, c'est vraiment minuscule. Je devrais donc, au minimum payer 12$ par mois pour gérer mes projets git. On parle de 144$ par année pour gérer du code. Vous me trouverez peut-être radin, mais avant de payer ~150$ pour github, je payerais pour un autre serveur ou j'augmenterais la RAM de mon serveur VPS actuel.</p>
+<p>J'adore github, c'est un très bon service, plutôt complet, facile à utiliser et quand même agréable à regarder. J'adore leur mission et les services qu'ils rendent à la communauté, mais pour ce qui est de leur source de revenus, je laisse les grandes compagnies payer pour des comptes entreprises.</p>
+<p>Alors pour nous, développeurs radins de ce monde, il y a une solution : GitLab. Gitlab est en fait une interface graphique (web) pour gitolite (anciennement gitosis). L'application est gratuite et permet de gérer des projets privés. Des tests que j'ai effectué, c'est impossible d'avoir des projets publics, github le fait très bien de toute façon :).</p>
+<p>Pour l'installation, vous avez deux choix, le <a href="https://github.com/gitlabhq/gitlabhq/blob/4-0-stable/doc/install/installation.md">guide long</a> ou le script <a href="https://github.com/gitlabhq/gitlab-recipes/tree/master/install/v4">pré-fait</a>. Le script a été fait pour Ubuntu 12.04 LTS. Il devrait aussi bien fonctionner avec la version 12.10.</p>
+<p>Gitlab est open-source et il est écrit en Ruby. Si vous vous sentez d'attaque, vous pouvez contribuer au code ou l'adapter aux vos besoins.</p>
+<p>Une fonctionnalité que j'aime bien, c'est la possibilité d'appeler un serveur web externe (ou interne) lorsqu'il y a un événement sur un projet. Maintenant que mon installation locale est complète, je vais écrire un petit script qui va forcer les sites webs en ligne de se mettre à jour lors d'un évenement (comme un push sur un projet, sur une branche "prod", par exemple).</p>
+<p>Je vous invite fortement à essayer <a href="http://gitlabhq.com/">GitLab</a>, au moins la <a href="http://demo.gitlabhq.com/">démo</a>.</p>ww.google.com
+

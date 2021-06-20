@@ -67,6 +67,11 @@ export default {
           title: 'Contact me',
           to: '/#contact'
         },
+        {
+          icon: 'mdi-at',
+          title: 'Blog',
+          to: '/blog/'
+        },
       ],
       miniVariant: false,
       right: true,
@@ -108,7 +113,7 @@ nav {
   text-align: right;
 }
 nav .v-list-item {
-  padding: 0.5em;
+  padding: 0.5em 2em 0.5em 0.5em;
 }
 nav .v-list-item__title {
   font-size: 1.2em !important;
