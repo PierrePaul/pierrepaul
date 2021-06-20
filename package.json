@@ -11,10 +11,11 @@
   },
   "dependencies": {
     "@nuxt/content": "^1.14.0",
+    "@nuxtjs/vuetify": "^1.11.3",
     "core-js": "^3.9.1",
     "nuxt": "^2.15.3",
-    "sass": "~1.32.6",
-    "@nuxtjs/vuetify": "^1.11.3"
+    "nuxt-i18n": "^6.27.1",
+    "sass": "~1.32.6"
   },
   "resolutions": {
     "@nuxtjs/vuetify/**/sass": "1.32.12"
