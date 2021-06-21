@@ -6,6 +6,7 @@ slug: odoo
 summary: Changing from game development to odoo development.
 cover: images/2018/odoo.svg
 status: draft
+language: en
 ---
 
 Yay

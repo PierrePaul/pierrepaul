@@ -9,6 +9,7 @@ cover: /images/2018/robot_by_matmoon.jpg
 pictureCopyrightsText: Robot by batmoon
 pictureCopyrights: https://www.deviantart.com/matmoon/art/Robot-107177620
 status: published
+language: en
 ---
 
 So, for the past 4 months I've been working on a conversational bot, with Rasa Core and Rasa NLU. 

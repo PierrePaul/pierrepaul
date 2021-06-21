@@ -1,12 +1,16 @@
-Title:  Bypass AngularJS route provider
-Date: 2014-05-21
-Category: Javascript
-Tags: AngularJS
-Slug: bypass-angularjs-route-provider
-Summary: Thanks to #angularjs, I've found a gem in the google groups. I was trying to bypass the route provider from AngularJS. I was trying to make an oauth2 call to Google from the server side, but AngularJS was preventing the redirection everytime.
-cover: images/2014/card-trick.jpg
-PictureCopyrightsText: Card trick by apfe
-PictureCopyrights: http://apfe.deviantart.com/art/Card-trick-72246923
+---
+title:  Bypass AngularJS route provider
+date: 2014-05-21
+category: Javascript
+tags: AngularJS
+slug: bypass-angularjs-route-provider
+summary: Thanks to #angularjs, I've found a gem in the google groups. I was trying to bypass the route provider from AngularJS. I was trying to make an oauth2 call to Google from the server side, but AngularJS was preventing the redirection everytime.
+cover: /images/2014/card-trick.jpg
+pictureCopyrightsText: Card trick by apfe
+pictureCopyrights: http://apfe.deviantart.com/art/Card-trick-72246923
+status: published
+language: en
+---
 
 Thanks to #angularjs, I've found a gem in the google groups. I was
 trying to bypass the route provider from AngularJS. I was trying to make an

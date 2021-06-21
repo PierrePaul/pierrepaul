@@ -1,12 +1,16 @@
-Title:  PHPQuebec - Introduction à Vagrant
-Date: 2014-09-02
-Category: Contribution
-Tags: Speaker, Vagrant, DevOps
-Slug: phpquebec-introduction-vagrant
-Summary: Je présente une bonne introduction à Vagrant pour PHPQuébec jeudi prochain (le 4 septembre 2014). Tout le monde est le bienvenu!
-cover: images/2014/phpquebec.png
-PictureCopyrightsText: PHPQuébec
-PictureCopyrights: http://phpquebec.org
+---
+title: PHPQuebec - Introduction à Vagrant
+date: 2014-09-02
+category: Contribution
+tags: Speaker, Vagrant, DevOps
+slug: phpquebec-introduction-vagrant
+summary: Je présente une bonne introduction à Vagrant pour PHPQuébec jeudi prochain (le 4 septembre 2014). Tout le monde est le bienvenu!
+cover: /images/2014/phpquebec.png
+pictureCopyrightsText: PHPQuébec
+pictureCopyrights: http://phpquebec.org
+status: pbulished
+language: en
+---
 
 Ce jeudi prochain, le 4 septembre 2014, je présente une session de 45 minutes sur les bases de Vagrant. Je vais expliquer l'idée principale derrière l'utilisation des machines virtuelles pour le développement.
 

@@ -1,10 +1,14 @@
-Title:  Vagrant-Control
-Date: 2014-09-21
-Category: Contribution
-Tags: Python, AngularJS, Flask
-Slug: vagrant-control-mp47
-Summary: Vagrant-Control is a project I have been working on for the past year. It's web UI to control a small cluster of Vagrant projects with many providers out of the box (vsphere/vmware, lxc, virtualbox, etc).
-cover: images/2014/vagrant-control.jpg
+---
+title: Vagrant-Control
+date: 2014-09-21
+category: Contribution
+tags: Python, AngularJS, Flask
+slug: vagrant-control-mp47
+summary: Vagrant-Control is a project I have been working on for the past year. It's web UI to control a small cluster of Vagrant projects with many providers out of the box (vsphere/vmware, lxc, virtualbox, etc).
+cover: /images/2014/vagrant-control.jpg
+status: published
+language: en
+---
 
 I have been working on Vagrant-Control for almost 8 months now and the project is starting to shape up into something really great. For those who missed my session at Montreal-Python last year(or last june), Vagrant-Control is a Flask/AngularJS web application coupled with 3 microapplications (*nginx-api*, *htpasswd-api* and *vagrant-worker*). Vagrant-Control & friends let you manage a _cluster_ of vagrant machines with ease. Vagrant can be used with LXC/VMWare and get almost the same performance as bare metal servers, and this is where VagrantControl really shines. 
 

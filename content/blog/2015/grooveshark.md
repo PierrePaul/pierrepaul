@@ -1,11 +1,15 @@
-Title: Surprise, Grooveshark est mort!
-Date: 2015-05-01
-Category: /dev/random
-Summary: Tout le monde semble surpris de la fin de grooveshark. C'est peut-être le temps de parler un peu de son histoire.
-Slug: grooveshark-est-mort
-cover: images/2015/deadend.jpg
-PictureCopyrightsText: dead end
-PictureCopyrights: http://www.deviantart.com/art/dead-end-163983141
+---
+title: Surprise, Grooveshark est mort!
+date: 2015-05-01
+category: /dev/random
+summary: Tout le monde semble surpris de la fin de grooveshark. C'est peut-être le temps de parler un peu de son histoire.
+slug: grooveshark-est-mort
+cover: /images/2015/deadend.jpg
+pictureCopyrightsText: dead end
+pictureCopyrights: http://www.deviantart.com/art/dead-end-163983141
+language: fr
+status: published
+---
 
 Tout le monde semble surpris que Grooveshark ferme. Pour donner un peu plus d'explications pour ceux qui suivent un peu moins les nouvelles juridiques du domaine des technologies de l'information, voici un bref résumé de l'histoire de la compagnie depuis 2006.
 

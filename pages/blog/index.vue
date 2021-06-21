@@ -1,9 +1,9 @@
 <template>
   <div class="blog">
-    <v-row>
+    <v-row v-if="pages.length">
       <v-col cols="6" v-for="(page, idx) in pages" :key="idx">
         <v-card>
-          <nuxt-link :to="page.slug" class="blog-link">
+          <nuxt-link :to="{name: 'blog-slug___' + $i18n.locale, params: {slug: page.slug}}" class="blog-link">
           <v-img :src="page.cover" v-if="page.cover" height="200px">
             <v-card-title>{{ page.title }}</v-card-title>
           </v-img>
@@ -17,13 +17,18 @@
         </v-card>
       </v-col>
     </v-row>
+    <v-row v-else>
+      <v-col cols="12" align="center">
+        {{$t('errors.no_results')}}
+      </v-col>
+    </v-row>
   </div>
 </template>
 
 <script>
 export default {
-  async asyncData ({ $content }) {
-    const pages = await $content('blog', {deep: true}).where({ 'status': 'published' }).sortBy('date', 'desc').limit(9).fetch()
+  async asyncData ({ $content, app }) {
+    const pages = await $content('blog', {deep: true}).where({ 'status': 'published', 'language': app.i18n.locale }).sortBy('date', 'desc').limit(9).fetch()
     return {
       pages
     }

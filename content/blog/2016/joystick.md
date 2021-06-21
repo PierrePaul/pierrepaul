@@ -1,10 +1,14 @@
-Title:  Phaser Virtual Joystick
-Date: 2016-01-24
-Category: Javascript 
-Tags: Phaser.io, Typescript
-Slug: phaser-virtual-joystick
-Summary: I've recently started a new personal game and needed a virtual joystick implementation. Here it is, free of all rights.
+---
+title:  Phaser Virtual Joystick
+date: 2016-01-24
+category: Javascript 
+tags: Phaser.io, Typescript
+slug: phaser-virtual-joystick
+summary: I've recently started a new personal game and needed a virtual joystick implementation. Here it is, free of all rights.
 cover: images/2016/desktop.jpg
+language: en
+status: published
+---
 
 I had way too much time on my hands while being on vacation for christmas, so I decided to make a new game. This new one
 is called _ast-roid_ (working title, everybody calls it ass-droid, so it will be changed soon :)).

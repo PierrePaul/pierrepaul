@@ -7,6 +7,7 @@ slug: crosscode
 summary: This small blog is usually centered around programming and system administration, but I love games. Let's talk about CrossCode.
 cover: /images/2018/crosscode-1.png
 status: published
+language: en
 ---
 
 I usually write about programming, system administration or DevOps, but if you know me a little, I **really** love games.

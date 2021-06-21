@@ -1,10 +1,14 @@
-Title: A logo!
-Date: 2015-01-17
-Category: /dev/random
-Tags: Personal Branding
-Slug: logo
-Summary: It's been a long time since I wanted a logo, but the timing was always wrong. I had no idea what I exactly wanted, so I never try asking a friend for the logo. Today though, I finally have a logo for this small blog!
+---
+title: A logo!
+date: 2015-01-17
+category: /dev/random
+tags: Personal Branding
+slug: logo
+summary: It's been a long time since I wanted a logo, but the timing was always wrong. I had no idea what I exactly wanted, so I never try asking a friend for the logo. Today though, I finally have a logo for this small blog!
 cover: images/2015/logo.png
+language: en
+status: published
+---
 
 I wanted a logo for a long time. I never really needed one, but it was something I wanted for this blog.
 

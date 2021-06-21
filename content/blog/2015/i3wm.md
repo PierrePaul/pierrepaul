@@ -1,9 +1,13 @@
-Title:  Tiling window manager (twm) - i3
-Date: 2015-08-27
-Category: Sysadmin
-Slug: i3wm
-Summary: I've recently switched to a tiling window manager called i3 (or i3wm). Here are my thoughts so far.
+---
+title:  Tiling window manager (twm) - i3
+date: 2015-08-27
+category: Sysadmin
+slug: i3wm
+summary: I've recently switched to a tiling window manager called i3 (or i3wm). Here are my thoughts so far.
 cover: images/2015/i3wm.png
+status: published
+language: en
+---
 
 A good friend of mine([Aurelien](http://www.kerunix.com)) has been trying to convince me from a long time to try tiling window manager. After trying a few, I didn't find the value in it. It was either unstable or as slow as a bigger window manager (like Unity or gnome3). And most of all, it broke my work flow.
 

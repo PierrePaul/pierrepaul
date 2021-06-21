@@ -1,10 +1,14 @@
-Title:  PyCon 2014 - part 2
-Date: 2014-03-30
-Category: /dev/random
-Tags: Python
-Slug: pycon-2014-part-two
-Summary: Following last post, we will cover the remaining of the session. With keynotes on both days, it should now fit into one article. ☺
-cover: images/2014/pycon2014.png
+---
+title:  PyCon 2014 - part 2
+date: 2014-03-30
+category: /dev/random
+tags: Python
+slug: pycon-2014-part-two
+summary: Following last post, we will cover the remaining of the session. With keynotes on both days, it should now fit into one article. ☺
+cover: /images/2014/pycon2014.png
+language: en
+status: published
+---
 
 # Introduction to Docker 10:50 - 11:20
 https://us.pycon.org/2014/schedule/presentation/209/

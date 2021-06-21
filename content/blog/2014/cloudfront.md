@@ -1,12 +1,16 @@
-Title: CloudFront
-Date: 2014-01-13
-Category: Sysadmin
-Tags: Amazon
-Slug: cloudfront
-Summary: I recently had to calculate expenses for a new big international project. The drupal project needs caching around the world and I was very curious about the Amazon offering, *CloudFront*. Obviously, I have just fallen in love with yet another Amazon solution. I'll go over the good, the bad and ugly points I have found out throughout my research.
+---
+title: CloudFront
+date: 2014-01-13
+category: Sysadmin
+tags: Amazon
+slug: cloudfront
+summary: I recently had to calculate expenses for a new big international project. The drupal project needs caching around the world and I was very curious about the Amazon offering, *CloudFront*. Obviously, I have just fallen in love with yet another Amazon solution. I'll go over the good, the bad and ugly points I have found out throughout my research.
 cover: images/2014/cloudfront.png
-PictureCopyrightsText: Wellsville Mountain January Afternoon
-PictureCopyrights: http://nmsmith.deviantart.com/art/Wellsville-Mountain-January-Afternoon-279816917
+pictureCopyrightsText: Wellsville Mountain January Afternoon
+pictureCopyrights: http://nmsmith.deviantart.com/art/Wellsville-Mountain-January-Afternoon-279816917
+status: published
+language: en
+---
 
 I recently had to calculate expenses for a new big international project. The drupal project needs caching around the world and I was very curious about the Amazon offering, *CloudFront*. Obviously, I have just fallen in love with yet another Amazon solution. I'll go over the good, the bad and ugly points I have found out throughout my research.
 

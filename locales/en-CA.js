@@ -10,5 +10,9 @@ export default {
   index: {
     title: 'I am Pierre Paul Lefebvre',
     projects: 'Projects',
+    me: 'Me',
+  },
+  errors: {
+    no_results: 'No results found',
   }
 }

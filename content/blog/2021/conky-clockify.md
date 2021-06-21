@@ -7,6 +7,7 @@ slug: conky-clockify
 summary: Using clockify on a daily basis, I find it useful to show to my timesheet directly on my desktop using conky.
 cover: /images/2021/conky.png
 status: published
+language: en
 ---
 
 Conky

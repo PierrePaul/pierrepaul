@@ -1,12 +1,16 @@
-Title:  YulDev #2
-Date: 2014-06-03
-Category: Contribution
-Tags: Event
-Slug: yuldev-2
-Summary: Le YulDev, c'est quoi? Quelle  est l'histoire derrière tout ça? Un court article pour expliquer d'où ça vient, les idées qui ont poussés la création de cet événement.
-cover: images/2014/yuldev.png
-PictureCopyrightsText: Capture d'écran de l'entrevue entre Christian Aubry et Frédéric Harper
-PictureCopyrights: https://www.youtube.com/watch?v=giRKb73PraQ
+---
+title: YulDev #2
+date: 2014-06-03
+category: Contribution
+tags: Event
+slug: yuldev-2
+summary: Le YulDev, c'est quoi? Quelle  est l'histoire derrière tout ça? Un court article pour expliquer d'où ça vient, les idées qui ont poussés la création de cet événement.
+cover: /images/2014/yuldev.png
+pictureCopyrightsText: Capture d'écran de l'entrevue entre Christian Aubry et Frédéric Harper
+pictureCopyrights: https://www.youtube.com/watch?v=giRKb73PraQ
+status: published
+language: en
+---
 
 Lundi passé, j'assistais au deuxième événement du YulDev, un nouveau _usergroup_ montréalais. L'idée (à ma connaissance en tout cas) a pris naissance au PyCon lors d'une conversation avec [Frédéric Harper](http://outofcomfortzone.net/). 
 

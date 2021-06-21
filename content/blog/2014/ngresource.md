@@ -1,10 +1,14 @@
-Title:  ngResource
-Date: 2014-10-08
-Category: Javascript
-Tags: AngularJS
-Slug: ngresource
-Summary: ngResource and the JSend format does not mix well together. A small warning and explanation.
-cover: images/2014/ngresource.png
+---
+title:  ngResource
+date: 2014-10-08
+category: Javascript
+tags: AngularJS
+slug: ngresource
+summary: ngResource and the JSend format does not mix well together. A small warning and explanation.
+cover: /images/2014/ngresource.png
+status: published
+language: en
+---
 
 ngResource is an awesome and very mysterious module for AngularJS. Many people, like me, both build their API and the AngularJS and seem to have some issue about how it works exactly. The documentation on the angularjs is about the module itself, but it's taking into account that your API is already perfect, wich might not be the case if you're the one doing it :).
 

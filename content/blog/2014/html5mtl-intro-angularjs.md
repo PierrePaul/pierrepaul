@@ -1,10 +1,14 @@
-Title:  Introduction à AngularJS
-Date: 2014-09-03
-Category: Contribution
-Tags: Javascript
-Slug: html5mtl-introduction-angularjs
-Summary: Une autre présentation ce mois-ci! Celle-ci portera sur AngularJS et vise toujours un public débutant. Au rendez-vous, directives, services, angular-router, angular-translate, anglar-ui et beaucoup plus!
-cover: images/2014/angular.png
+---
+title: Introduction à AngularJS
+date: 2014-09-03
+category: Contribution
+tags: Javascript
+slug: html5mtl-introduction-angularjs
+summary: Une autre présentation ce mois-ci! Celle-ci portera sur AngularJS et vise toujours un public débutant. Au rendez-vous, directives, services, angular-router, angular-translate, anglar-ui et beaucoup plus!
+cover: /images/2014/angular.png
+language: fr
+status: published
+---
 
 Une autre présentation ce mois-ci! Celle-ci portera sur AngularJS et vise toujours un public débutant.
 

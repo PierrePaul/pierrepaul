@@ -9,6 +9,7 @@ cover: /images/2020/silence.jpg
 pictureCopyrightsText: Silence is golden by Unkopierbar
 pictureCopyrights: https://www.deviantart.com/unkopierbar/art/silence-is-golden-818939217
 status: published
+language: en
 ---
 
 Two years I haven't written a thing here! Those two years sure went fast.

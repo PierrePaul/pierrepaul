@@ -1,11 +1,15 @@
-Title:  Python gotcha
-Date: 2015-10-29
-Category: Python
-Slug: python-gotcha
-Summary: Got bitten recently by a hard to find gotcha (not a bug, just something that you need to keep in mind). I invite you to read further, so you don't loose your time too!
-cover: images/2015/python-gotchas.jpg
-PictureCopyrightsText: Cat Snake by nakitez
-PictureCopyrights: http://nakitez.deviantart.com/art/Cat-snake-263535345
+---
+title:  Python gotcha
+date: 2015-10-29
+category: Python
+slug: python-gotcha
+summary: Got bitten recently by a hard to find gotcha (not a bug, just something that you need to keep in mind). I invite you to read further, so you don't loose your time too!
+cover: /images/2015/python-gotchas.jpg
+pictureCopyrightsText: Cat Snake by nakitez
+pictureCopyrights: http://nakitez.deviantart.com/art/Cat-snake-263535345
+status: published
+language: en
+---
 
 A few weeks ago, I stumbled on a very hard to find bug while working on [Kickoff Legends](https://www.kickofflegends.com).
 To explain correctly the issue, I need to start with a simplier version.

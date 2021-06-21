@@ -1,12 +1,14 @@
-Title:  Leap motion
-Date: 2014-05-02
-Category: /dev/random
-Tags: Leapmotion, Javascript
-Slug: leap-motion
-Summary: I really had a blast testing out the Leap motion, an infrared kinect type controller for the computer. It works on any OS and expose very neat APIs(unlike the kinect).
+---
+title:  Leap motion
+date: 2014-05-02
+category: /dev/random
+tags: Leapmotion, Javascript
+slug: leap-motion
+summary: I really had a blast testing out the Leap motion, an infrared kinect type controller for the computer. It works on any OS and expose very neat APIs(unlike the kinect).
 cover: images/2014/leapmotion.jpg
-PictureCopyrights: https://www.leapmotion.com
-Status: draft
+pictureCopyrights: https://www.leapmotion.com
+status: draft
+---
 
 At Pheromone we backed the project when it was a kickstarter, but I never had
 the time to play with it. I still don't have the time for it, but I had nothing

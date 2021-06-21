@@ -1,11 +1,15 @@
-Title:  PyCon 2014
-Date: 2014-03-27
-Category: /dev/random
-Tags: Python
-Slug: pycon-2014-day-one
-Summary: I'm going to PyCon 2014 in Montreal. Let's try to pinpoint the most interesting sessions and build up my own schedule and try to guide you through some sessions of the schedule.
-cover: images/2014/pycon2014.png
-PictureCopyrights: https://us.pycon.org/2014/schedule/talks/
+---
+title:  PyCon 2014
+date: 2014-03-27
+category: /dev/random
+tags: Python
+slug: pycon-2014-day-one
+summary: I'm going to PyCon 2014 in Montreal. Let's try to pinpoint the most interesting sessions and build up my own schedule and try to guide you through some sessions of the schedule.
+cover: /images/2014/pycon2014.png
+pictureCopyrights: https://us.pycon.org/2014/schedule/talks/
+status: published
+language: en
+---
 
 For the first time (I think?) and for the following year PyCon US will be held in Canada, Montreal. Working in Montreal and loving Python, I had to sign up and was really surprised to see the low price of it. Big "Con" like this one usually runs up at around 700$USD, but the early bird rate (for individual) was 200$USD. Being so accessible, I had to sign up.
 

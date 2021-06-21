@@ -3,6 +3,7 @@
     <v-navigation-drawer
       app
       color="lighten-3"
+      width="325"
     >
       <div class="brand">Pierre Paul</div>
       <v-list>
@@ -73,7 +74,7 @@ export default {
           hash: '#contact',
         },
         {
-          icon: 'mdi-at',
+          icon: 'mdi-face',
           title: 'nav.blog',
           to: 'blog'
         },

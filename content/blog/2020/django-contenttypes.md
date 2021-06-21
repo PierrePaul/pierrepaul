@@ -7,6 +7,7 @@ slug: grappelli-recentactions-custom-models
 summary: You would like to show the recent actions on your custom models, but the docs is not very clear how. Let's see how!
 cover: /images/2020/contenttypes.png
 status: published
+language: en
 ---
 
 The [RecentActions class](https://django-grappelli.readthedocs.io/en/latest/dashboard_api.html#the-recentactions-class) from Grappelli is really cool to show the latest actions on models, but the documentation doesn't really go in details on how to use the `exclude_list` and `include_list` with your custom models.

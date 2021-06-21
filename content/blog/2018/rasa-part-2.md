@@ -9,6 +9,7 @@ cover: /images/2018/sad-robot.png
 pictureCopyrightsText: The Robot with the stuffed Rabbit by issabissabel
 pictureCopyrights: https://www.deviantart.com/issabissabel/art/The-Robot-with-the-stuffed-Rabbit-413625229
 status: published
+language: en
 ---
 
 Last [article]({filename}/articles/2018/rasa.md) I mentioned I really loved Rasa (let's focus on Rasa Core 0.11.x) and I think I still do, but having developed a real application with a real life use case, I've found many glaring issues.

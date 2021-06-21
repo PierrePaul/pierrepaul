@@ -1,12 +1,16 @@
-Title:  Now a CTO
-Date: 2014-12-13
-Category: /dev/random
-Tags: devops
-Slug: now-a-cto
-Summary: Some of you might have heard, some of you might have seen the LinkedIn update. Here is a quick summary of how I see it and how I feel about it.
+---
+title:  Now a CTO
+date: 2014-12-13
+category: /dev/random
+tags: devops
+slug: now-a-cto
+summary: Some of you might have heard, some of you might have seen the LinkedIn update. Here is a quick summary of how I see it and how I feel about it.
 cover: images/2014/lost.jpg
-PictureCopyrights: http://my-dynig-soul.deviantart.com/art/lost-73989699
-PictureCopyrightsText: by My-dynig-soul
+pictureCopyrights: http://my-dynig-soul.deviantart.com/art/lost-73989699
+pictureCopyrightsText: by My-dynig-soul
+status: published
+language: en
+---
 
 You're not the only one suprised, believe me. I think I have been good at juggling everything I had on my hands, technology wise at least, but I never expected this to happen.
 

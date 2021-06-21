@@ -1,12 +1,16 @@
-Title: Lightning talk at devopsmtl about ansible-galaxy
-Date: 2014-01-28
-Category: Sysadmin
-Tags: Ansible, DevOps
-Slug: ansible-galaxy-lightning-talk
-Summary: Lightning talk at devopsmtl next monday (february 3th). I will cover the basics behind ansible-galaxy, how it works and the ideas behind it.
-cover: images/2014/galaxy.jpg
-PictureCopyrightsText: Galaxy by vmulligan
-PictureCopyrights: http://vmulligan.deviantart.com/art/Galaxy-74334218
+---
+title: Lightning talk at devopsmtl about ansible-galaxy
+date: 2014-01-28
+category: Sysadmin
+tags: Ansible, DevOps
+slug: ansible-galaxy-lightning-talk
+summary: Lightning talk at devopsmtl next monday (february 3th). I will cover the basics behind ansible-galaxy, how it works and the ideas behind it.
+cover: /images/2014/galaxy.jpg
+pictureCopyrightsText: Galaxy by vmulligan
+pictureCopyrights: http://vmulligan.deviantart.com/art/Galaxy-74334218
+status: published
+language: en
+---
 
 I'm doing a lightning talk next Monday on [ansible-galaxy](https://galaxy.ansible.com/). It can be compared to the puppet forge but for ansible. Users rate each "roles". Every role is published on github and can be forked, read and you can, of course, submit new issues to it. The site uses oauth from Google, Twitter and Facebook, but you can also create an account the good ol' way as well.
 
