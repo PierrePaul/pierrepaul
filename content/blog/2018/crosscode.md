@@ -1,10 +1,13 @@
-Title: CrossCode 
-Date: 2018-12-29
-Category: Games
-Tags: Games
-Slug: crosscode
-Summary: This small blog is usually centered around programming and system administration, but I love games. Let's talk about CrossCode.
-Cover: images/2018/crosscode-1.png
+---
+title: CrossCode 
+date: 2018-12-29
+category: Games
+tags: Games
+slug: crosscode
+summary: This small blog is usually centered around programming and system administration, but I love games. Let's talk about CrossCode.
+cover: /images/2018/crosscode-1.png
+status: published
+---
 
 I usually write about programming, system administration or DevOps, but if you know me a little, I **really** love games.
 

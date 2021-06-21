@@ -10,17 +10,17 @@ status: published
 ---
 
 Conky
-=====
+-----
 
 Conky is a nice linux utility that display real time information to your desktop. I've taken a liking to manjaro-i3 variant and it has been enabled by default for a long time. It comes with a few different themes, we will make a copy of the maia theme to add the clockify report.
 
 Clockify
-========
+--------
 
-[Clockify](https://clockify.me) is a good and cheap solution your track time online. You can manage your team, have reports shared publicly (so your client can now in real time how much time has been spent) and even the pro features are pretty cheap, if you ever need them.
+[Clockify](https://clockify.me) is a good and cheap solution to track your time online. You can manage your team, have reports shared publicly (so your client can now in real time how much time has been spent) and even the pro features are pretty cheap, if you ever need them.
 
 i3
-==
+--
 
 I'm using i3, so the first steps will cover i3 specifically. With manjaro-i3, by default the conky is started inside `~/.i3/config`. Somewhere in your config file you will find `start_conky_maia`. This bash script starts two conky file, one for the shortcut and another one for the things we actually care about, live informations. We want to replace the theme file with our own, so it doesn't get overwritten in the next update.
 
@@ -41,7 +41,7 @@ exec --no-startup-id conky -c ~/conky_theme
 ```
 
 The fun part
-============
+------------
 
 Let's get into the fun part now, you will need some utilities I made open source to get the data out of clockify :
 

@@ -17,7 +17,7 @@ I open this site and I would always tell myself : I should try to replace this a
 So, it's kind of hard getting content done!
 
 What I have been up to, in my life
-==================================
+----------------------------------
 
 Two years ago I left StudioQi, the gaming industry (to some extent), to go for a very short time in ERP. The company I chose to get into the ERP field was not for me. I'm still unsure what didn't click with me and this company, but less than a month in, I got an offer to try to save kids lives, so it was hard to pass.
 I still believe ERP are cool, helping companies to maximize their potential and I might get back into it at some point in my life, but not right now.
@@ -33,7 +33,7 @@ I worked on that for about 6 months.
 Then I started working on [TradeSpecifix](https://tradespecifix.com). It's an application to track remote workers on different sites. Mostly aimed (right now) at construction, a manager can follow his workers when they enter a construction site. At all times, a manager knows how many employees is on site and needs to be evacuated in case of emergencies. Bound to that, are timetracking and safety meetings. Whenever a worker enters a site and starts logging his time, he has to read the safety meetings (which can be as simple as : wear a hard hard, or more complicated things about electricity). I worked on that for another 6 months.
 
 FIXRS
-=====
+-----
 
 At this point I think Francois figured I was interested in more than pure development. A bit before April 1st (no joke!), I started my own company, with Francois and Edouard as equal partners. The idea behind [FIXRS](https://fixrs.ca) is very simple, match clients with senior developers. Client manage their developer, no project manager imposed to the client. For developers, FIXRS handle invoicing and attract new clients/contracts. Companies have a hard time keeping their developers and when they loose one developer, most of the time all hell break loose. That's where we come in. Rent a developer while you take your time finding the perfect match for your company. Your FIXRS can do a knowledge transfer in the 1-2 last weeks of your developer and train your next star, when s.he is ready to join.
 

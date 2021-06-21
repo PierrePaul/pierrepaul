@@ -1,12 +1,15 @@
-Title:  Rasa Core/NLU
-Date: 2018-09-13
-Category: python
-Tags: Natural Language Understanding
-Slug: rasa-core-nlu
-Summary: I've been working for the past 4 months with Rasa Core and Rasa NLU. I've become a fan boy and I'd like to show you how simple and fun it is.
-cover: images/2018/robot_by_matmoon.jpg
-PictureCopyrightsText: Robot by batmoon
-PictureCopyrights: https://www.deviantart.com/matmoon/art/Robot-107177620
+---
+title:  Rasa Core/NLU
+date: 2018-09-13
+category: python
+tags: Natural Language Understanding
+slug: rasa-core-nlu
+summary: I've been working for the past 4 months with Rasa Core and Rasa NLU. I've become a fan boy and I'd like to show you how simple and fun it is.
+cover: /images/2018/robot_by_matmoon.jpg
+pictureCopyrightsText: Robot by batmoon
+pictureCopyrights: https://www.deviantart.com/matmoon/art/Robot-107177620
+status: published
+---
 
 So, for the past 4 months I've been working on a conversational bot, with Rasa Core and Rasa NLU. 
 

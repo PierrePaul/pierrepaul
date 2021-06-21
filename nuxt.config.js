@@ -17,6 +17,7 @@ export default {
     link: [
       { rel: 'preconnect', href: "https://fonts.gstatic.com"},
       { rel: 'stylesheet', href: "https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap"},
+      { rel: 'stylesheet', href: "https://fonts.googleapis.com/css2?family=Cardo&display=swap"},
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
