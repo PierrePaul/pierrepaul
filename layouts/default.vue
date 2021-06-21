@@ -10,7 +10,7 @@
           <v-list-item
             v-for="(item, i) in items"
             :key="i"
-            :to="item.to"
+            :to="{name: item.to + '___' + $i18n.locale, hash: item.hash}"
             router
             class="nav-links"
           >
@@ -18,7 +18,7 @@
               <v-icon v-text="item.icon"></v-icon>
             </v-list-item-icon>
             <v-list-item-content>
-              <v-list-item-title v-text="item.title"></v-list-item-title>
+              <v-list-item-title v-text="$t(item.title)"></v-list-item-title>
             </v-list-item-content>
           </v-list-item>
         </v-list-item-group>
@@ -44,33 +44,38 @@ export default {
       items: [
         {
           icon: 'mdi-home',
-          title: 'Introduction',
-          to: '/'
+          title: 'nav.introduction',
+          to: 'index',
+          hash: "#top"
         },
         {
           icon: 'mdi-xml',
-          title: 'Expertise',
-          to: '/#expertise'
+          title: 'nav.expertise',
+          to: 'index',
+          hash: '#expertise'
         },
         {
           icon: 'mdi-folder-star',
-          title: 'Projects',
-          to: '/#projects'
+          title: 'nav.projects',
+          to: 'index',
+          hash: '#projects',
         },
         {
           icon: 'mdi-human-handsup',
-          title: 'Me',
-          to: '/#me'
+          title: 'nav.me',
+          to: 'index',
+          hash: '#me'
         },
         {
           icon: 'mdi-at',
-          title: 'Contact me',
-          to: '/#contact'
+          title: 'nav.contact',
+          to: 'index',
+          hash: '#contact',
         },
         {
           icon: 'mdi-at',
-          title: 'Blog',
-          to: '/blog/'
+          title: 'nav.blog',
+          to: 'blog'
         },
       ],
       miniVariant: false,
@@ -83,7 +88,7 @@ export default {
 </script>
 
 <style>
-.theme--light.v-list-item.nav-links, .theme--light.v-list-item:not(.v-list-item--active):not(.v-list-item--disabled), .theme--light.v-icon {
+nav .theme--light.v-list-item.nav-links, nav .theme--light.v-list-item:not(.v-list-item--active):not(.v-list-item--disabled), nav .theme--light.v-icon {
   color: whitesmoke !important;
 }
 .language-switcher {
@@ -104,8 +109,8 @@ export default {
 .language-switcher a:hover {
   text-decoration: underline;
 }
-.container {
-  background-image: url('/images/texture.png')
+html {
+  background-color: #f5fafa;
 }
 nav {
   background: #222729 url('/images/overlay.png') !important;
@@ -113,7 +118,7 @@ nav {
   text-align: right;
 }
 nav .v-list-item {
-  padding: 0.5em 2em 0.5em 0.5em;
+  padding: 0.5em 2em 0.5em 1.5em;
 }
 nav .v-list-item__title {
   font-size: 1.2em !important;
@@ -138,7 +143,7 @@ h2 {
   padding: 1em;
   color: whitesmoke;
 }
-.v-card__title {
+.blog .v-card__title {
   color: whitesmoke;
   font-weight: bold;
   font-size: 1.7em;

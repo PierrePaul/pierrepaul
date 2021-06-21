@@ -1,5 +1,5 @@
 <template>
-  <div class="article">
+  <div class="blog article">
     <v-row>
       <v-col cols="12" style="padding: 0">
         <v-img :src="article.cover" v-if="article.cover">

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="blog">
     <v-row>
       <v-col cols="6" v-for="(page, idx) in pages" :key="idx">
         <v-card>
@@ -30,11 +30,8 @@ export default {
   },
   filters: {
     formatDate: function(date) {
-      const jsDate = new Date(date);
-      const year = jsDate.getFullYear();
-      const month = jsDate.getMonth();
-      const day = jsDate.getDay();
-      return `${year}-${month.toString().padStart(2, 0)}-${day.toString().padStart(2, 0)}`
+      const dateFormatted = date.slice(0, 10)
+      return dateFormatted
     }
   }
 }

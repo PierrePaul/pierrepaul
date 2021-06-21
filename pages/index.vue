@@ -1,47 +1,92 @@
 <template>
-  <div>
+  <v-container>
     <v-row>
-      <v-col cols="12">
-        <h1 id="top">I am Pierre Paul Lefebvre</h1>
+      <v-col cols="12" align="center">
+        <h1 id="top">{{ $t("index.title") }}</h1>
       </v-col>
     </v-row>
     <v-row>
-      <v-col cols="12">
+      <v-col cols="12" align="center">
         <h2 id="expertise">Expertise</h2>
-        <v-col cols="6">
-          <h3>Python</h3>
-          <ul>
-            <li>Django</li>
-            <li>Wagtail</li>
-          </ul>
-        </v-col>
-        <v-col cols="6">
-          <h3>PHP</h3>
-          <ul>
-            <li>Drupal 6+7+8</li>
-            <li>Symphony</li>
-          </ul>
-        </v-col>
-        <v-col cols="6">
-          <h3>Devops</h3>
-          <ul>
-            <li>Ansible</li>
-            <li>Docker+docker-compose</li>
-            <li>Vagrant</li>
-          </ul>
-        </v-col>
+      </v-col>
+      <v-col cols="4" align="center">
+        <v-card>
+          <v-list-item>
+            <v-list-item-content>
+              <v-list-item-title>Python</v-list-item-title>
+              <v-list-item-subtitle>Django</v-list-item-subtitle>
+              <v-list-item-subtitle>Wagtail</v-list-item-subtitle>
+            </v-list-item-content>
+          </v-list-item>
+        </v-card>
+      </v-col>
+      <v-col cols="4" align="center">
+        <v-card>
+          <v-list-item>
+            <v-list-item-content>
+              <v-list-item-title>PHP</v-list-item-title>
+              <v-list-item-subtitle>Drupal 6/7/8</v-list-item-subtitle>
+              <v-list-item-subtitle>Symphony</v-list-item-subtitle>
+            </v-list-item-content>
+          </v-list-item>
+        </v-card>
+      </v-col>
+      <v-col cols="4" align="center">
+        <v-card>
+          <v-list-item>
+            <v-list-item-content>
+              <v-list-item-title>Devops</v-list-item-title>
+              <v-list-item-subtitle>Docker+docker-compose</v-list-item-subtitle>
+              <v-list-item-subtitle>Vagrant</v-list-item-subtitle>
+              <v-list-item-subtitle>Ansible</v-list-item-subtitle>
+            </v-list-item-content>
+          </v-list-item>
+        </v-card>
       </v-col>
     </v-row>
     <v-row>
-      <v-col cols="12">
+      <v-col cols="12" align="center">
         <h2 id="projects">Projects</h2>
-        <ul>
-          <li>BonjourQuebec</li>
-          <li>Secondo</li>
-          <li>kickoff legends</li>
-          <li>lvhockey</li>
-          <li>tradespecifix</li>
-        </ul>
+      </v-col>
+      <v-col cols="4">
+        <v-card>
+          <v-card-title>BonjourQuebec</v-card-title>
+          <v-card-text>
+            <v-row>
+              bla bla
+            </v-row>
+          </v-card-text>
+        </v-card>
+      </v-col>
+      <v-col cols="4">
+        <v-card>
+          <v-card-title>Secondo</v-card-title>
+          <v-card-text>
+            <v-row>
+              bla bla
+            </v-row>
+          </v-card-text>
+        </v-card>
+      </v-col>
+      <v-col cols="4">
+        <v-card>
+          <v-card-title>Kickoff Legends</v-card-title>
+          <v-card-text>
+            <v-row>
+              bla bla
+            </v-row>
+          </v-card-text>
+        </v-card>
+      </v-col>
+      <v-col cols="4">
+        <v-card>
+          <v-card-title>TradeSpecifix</v-card-title>
+          <v-card-text>
+            <v-row>
+              bla bla
+            </v-row>
+          </v-card-text>
+        </v-card>
       </v-col>
     </v-row>
     <v-row>
@@ -54,7 +99,7 @@
         <p>In 2020, with Edouard and Francois, we decided to create a new company, called FIXRS, where developers no longer need to choose between family and work.</p>
       </v-col>
     </v-row>
-  </div>
+  </v-container>
 </template>
 
 <script>

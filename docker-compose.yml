@@ -6,7 +6,7 @@ services:
     restart: on-failure
     ports:
       - "3000:3000"
-    command: "yarn install && yarn run dev"
+    command: "yarn run dev"
     volumes:
       - ./:/src
       - /src/node_modules
