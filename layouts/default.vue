@@ -1,9 +1,18 @@
 <template>
   <v-app dark>
+    <v-btn
+      dark
+      @click.stop="drawer = !drawer"
+      class="mobile-drawer d-sm-none"
+    >
+      <v-icon v-text="'mdi-menu'"></v-icon>
+    </v-btn>
     <v-navigation-drawer
       app
       color="lighten-3"
       width="325"
+      v-model="drawer"
+      :mini-variant="mini"
     >
       <div class="brand">Pierre Paul</div>
       <v-list>
@@ -41,7 +50,7 @@
 export default {
   data () {
     return {
-      drawer: true,
+      drawer: false,
       items: [
         {
           icon: 'mdi-home',
@@ -84,6 +93,15 @@ export default {
       rightDrawer: false,
       title: 'PierrePaul'
     }
+  },
+  computed: {
+    mini() {
+      return this.$vuetify.breakpoint.mdAndDown;
+    }
+  },
+  mounted() {
+    console.log(this.mini);
+    this.drawer = !this.mini;
   }
 }
 </script>
@@ -98,8 +116,8 @@ nav .theme--light.v-list-item.nav-links, nav .theme--light.v-list-item:not(.v-li
   background-color: rgba(34,39,41,0.75);
   border-radius: 5px;
   padding: 0.5em;
-  top: 50px;
-  right: 50px;
+  top: 10px;
+  right: 10px;
 }
 .language-switcher a {
   font-size: 1.2em;
@@ -155,5 +173,11 @@ a.blog-link {
 }
 h1, h2, h3 {
   padding: 1em 0 0.5em 0;
+}
+.mobile-drawer {
+  position: fixed;
+  left: 10px;
+  top: 10px;
+  z-index: 999;
 }
 </style>
