@@ -3,7 +3,7 @@
     <v-btn
       dark
       @click.stop="drawer = !drawer"
-      class="mobile-drawer d-sm-none"
+      class="mobile-drawer d-lg-none"
     >
       <v-icon v-text="'mdi-menu'"></v-icon>
     </v-btn>
@@ -12,7 +12,6 @@
       color="lighten-3"
       width="325"
       v-model="drawer"
-      :mini-variant="mini"
     >
       <div class="brand">Pierre Paul</div>
       <v-list>
@@ -88,7 +87,6 @@ export default {
           to: 'blog'
         },
       ],
-      miniVariant: false,
       right: true,
       rightDrawer: false,
       title: 'PierrePaul'
@@ -100,7 +98,6 @@ export default {
     }
   },
   mounted() {
-    console.log(this.mini);
     this.drawer = !this.mini;
   }
 }
@@ -144,7 +141,7 @@ nav .v-list-item__title {
 }
 body {
   font-family: 'Ubuntu';
-  font-size: 1.2em;
+  font-size: 1.0em;
 }
 .v-application {
   font-family: 'Ubuntu';
@@ -172,12 +169,15 @@ a.blog-link {
   text-decoration: none;
 }
 h1, h2, h3 {
-  padding: 1em 0 0.5em 0;
+  padding: 0.5em 0 0.5em 0;
 }
 .mobile-drawer {
   position: fixed;
   left: 10px;
   top: 10px;
   z-index: 999;
+}
+.theme--light.v-application code {
+  background-color: transparent;
 }
 </style>

@@ -2,105 +2,63 @@
   <v-container>
     <v-row>
       <v-col cols="12" align="center">
-        <h1 id="top">{{ $t("index.title") }}</h1>
+        <h1 id="top" class="text-h1">{{ $t("index.title") }}</h1>
       </v-col>
     </v-row>
     <v-row>
       <v-col cols="12" align="center">
-        <h2 id="expertise">Expertise</h2>
+        <h2 id="blog" class="text-h2">{{ $t('index.latest') }}</h2>
       </v-col>
-      <v-col cols="4" align="center">
-        <v-card>
-          <v-list-item>
-            <v-list-item-content>
-              <v-list-item-title>Python</v-list-item-title>
-              <v-list-item-subtitle>Django</v-list-item-subtitle>
-              <v-list-item-subtitle>Wagtail</v-list-item-subtitle>
-            </v-list-item-content>
-          </v-list-item>
-        </v-card>
-      </v-col>
-      <v-col cols="4" align="center">
-        <v-card>
-          <v-list-item>
-            <v-list-item-content>
-              <v-list-item-title>PHP</v-list-item-title>
-              <v-list-item-subtitle>Drupal 6/7/8</v-list-item-subtitle>
-              <v-list-item-subtitle>Symphony</v-list-item-subtitle>
-            </v-list-item-content>
-          </v-list-item>
-        </v-card>
-      </v-col>
-      <v-col cols="4" align="center">
-        <v-card>
-          <v-list-item>
-            <v-list-item-content>
-              <v-list-item-title>Devops</v-list-item-title>
-              <v-list-item-subtitle>Docker+docker-compose</v-list-item-subtitle>
-              <v-list-item-subtitle>Vagrant</v-list-item-subtitle>
-              <v-list-item-subtitle>Ansible</v-list-item-subtitle>
-            </v-list-item-content>
-          </v-list-item>
-        </v-card>
+      <v-col cols="4" v-for="article in articles" :key="article.slug">
+        <IndexBlog :article="article" />
       </v-col>
     </v-row>
     <v-row>
       <v-col cols="12" align="center">
-        <h2 id="projects">Projects</h2>
+        <h2 id="expertise" class="text-h2">Expertise</h2>
       </v-col>
       <v-col cols="4">
-        <v-card>
-          <v-card-title>BonjourQuebec</v-card-title>
-          <v-card-text>
-            <v-row>
-              bla bla
-            </v-row>
-          </v-card-text>
-        </v-card>
+        <IndexExpertise title="Python" subtitle="Django, Wagtail, I love python">
+          <img src="~/assets/django.svg" />
+        </IndexExpertise>
       </v-col>
       <v-col cols="4">
-        <v-card>
-          <v-card-title>Secondo</v-card-title>
-          <v-card-text>
-            <v-row>
-              bla bla
-            </v-row>
-          </v-card-text>
-        </v-card>
+        <IndexExpertise title="PHP" subtitle="Drupal 7/8/9, Symphony">
+          <img src="~/assets/drupal.svg" />
+        </IndexExpertise>
       </v-col>
       <v-col cols="4">
-        <v-card>
-          <v-card-title>Kickoff Legends</v-card-title>
-          <v-card-text>
-            <v-row>
-              bla bla
-            </v-row>
-          </v-card-text>
-        </v-card>
+        <IndexExpertise title="DevOps/CI" subtitle="Docker, docker-compose, Vagrant, Ansible, Gitlab runner/bitbucket pipelines">
+          <img src="~/assets/docker.svg" />
+        </IndexExpertise>
+      </v-col>
+    </v-row>
+    <v-row>
+      <v-col cols="12" align="center">
+        <h2 id="projects" class="text-h2">{{ $t('index.projects.title') }}</h2>
+      </v-col>
+      <v-col cols="12" sm="6" lg="4">
+        <Project name="Secondo" :description="$t('index.projects.secondo')" />
+      </v-col>
+      <v-col cols="12" sm="6" lg="4">
+        <Project name="Kickoff Legends" :description="$t('index.projects.kol')" />
       </v-col>
       <v-col cols="4">
-        <v-card>
-          <v-card-title>TradeSpecifix</v-card-title>
-          <v-card-text>
-            <v-row>
-              bla bla
-            </v-row>
-          </v-card-text>
-        </v-card>
+        <Project name="TradeSpecifix" :description="$t('index.projects.tradespecifix')" />
       </v-col>
     </v-row>
     <v-row>
       <v-col cols="12">
-        <h2 id="me">{{$t('index.me')}}</h2>
+        <h2 id="me" class="text-h2">{{$t('index.me')}}</h2>
       </v-col>
-      <v-col cols="12" v-if="$i18n.locale === 'en'">
+      <v-col cols="12" v-if="$i18n.locale === 'en'" class="text-body-1">
         <p>As said earlier, I started off as a web developer, following CEGEP, where I studied "informatique de gestion" and then one year at the ETS. After my two first years as a professional web developer, I started getting really interested in system administration. This attraction helped me get a better understanding of the low level packages that would be used later on to deliver faster, more responsive web applications.</p>
         <p>From June 2013 to November 2016, I've been the main Sysadmin at Pheromone, managing a not so small cluster of servers. Some being VMWare, others being OpenVZ contexts while others were Amazon EC2.</p>
         <p>From November 2016 to May 2018, I was promoted CTO to a new Pheromone subentity named StudioQi, focused on creating games.</p>
         <p>From August 2018 up to 2020, I have been working with Francois Viens on multiple (and very cool contracts), like Dis-Moi or TradeSpecifix.</p>
         <p>In 2020, with Edouard and Francois, we decided to create a new company, called FIXRS, where developers no longer need to choose between family and work.</p>
       </v-col>
-      <v-col cols="12" v-if="$i18n.locale === 'fr'">
+      <v-col cols="12" v-if="$i18n.locale === 'fr'" class="text-body-1">
         <p>J'ai commencé ma carrière en tant que développeur web, suivant ma formation en informatique de gestion au collège de Maisonneuve et d'une année à l'ETS en génie informatique.</p>
         <p>Après mes deux premières années, j'ai commencé à m'intéresser sérieusement à l'administration de système.</p>
         <p>Cette attirance soudaine venait principalement du besoin de rendre mes applications PHP plus rapides et par le fait même, plus agréables.</p>
@@ -110,11 +68,31 @@
         <p>Début 2020, avec Francois et Édouard, nous avons créer une nouvelle compagnie nommée FIXRS, où les développeurs n'ont plus à choisir entre famille et boulot.</p>
       </v-col>
     </v-row>
+    <v-row>
+      <v-col>
+        <h2 id="contact" class="text-h2">{{$t('index.contact')}}</h2>
+      </v-col>
+      <v-col cols="12" v-if="$i18n.locale === 'fr'" class="text-body-1">
+        <p>Vous pouvez me contacter via pierrepaul[@]fixrs.ca ou via <a href="https://www.linkedin.com/in/pierrepaull/" target="_blank">LinkedIn</a>.</p>
+      </v-col>
+      <v-col cols="12" v-if="$i18n.locale === 'en'" class="text-body-1">
+        <p>You can contact me via pierrepaul[@]fixrs.ca ou via <a href="https://www.linkedin.com/in/pierrepaull/" target="_blank">LinkedIn</a>.</p>
+      </v-col>
+    </v-row>
   </v-container>
 </template>
 
 <script>
-
+import IndexExpertise from "../components/IndexExpertise";
+import Project from "../components/Project";
+import IndexBlog from "../components/IndexBlog";
 export default {
+  async asyncData ({ $content, app }) {
+    const articles = await $content('blog', {deep: true}).where({ 'status': 'published', 'language': app.i18n.locale }).sortBy('date', 'desc').limit(3).fetch()
+    return {
+      articles
+    }
+  },
+  components: {IndexBlog, Project, IndexExpertise}
 }
 </script>
