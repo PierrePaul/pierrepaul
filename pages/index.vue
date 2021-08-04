@@ -9,7 +9,7 @@
       <v-col cols="12" align="center">
         <h2 id="blog" class="text-h2">{{ $t('index.latest') }}</h2>
       </v-col>
-      <v-col cols="4" v-for="article in articles" :key="article.slug">
+      <v-col cols="12" md="6" lg="4" v-for="article in articles" :key="article.slug">
         <IndexBlog :article="article" />
       </v-col>
     </v-row>
@@ -17,17 +17,17 @@
       <v-col cols="12" align="center">
         <h2 id="expertise" class="text-h2">Expertise</h2>
       </v-col>
-      <v-col cols="4">
+      <v-col cols="12" md="4" sm="6">
         <IndexExpertise title="Python" subtitle="Django, Wagtail, I love python">
           <img src="~/assets/django.svg" />
         </IndexExpertise>
       </v-col>
-      <v-col cols="4">
+      <v-col cols="12" md="4" sm="6">
         <IndexExpertise title="PHP" subtitle="Drupal 7/8/9, Symphony">
           <img src="~/assets/drupal.svg" />
         </IndexExpertise>
       </v-col>
-      <v-col cols="4">
+      <v-col cols="12" md="4" sm="6">
         <IndexExpertise title="DevOps/CI" subtitle="Docker, docker-compose, Vagrant, Ansible, Gitlab runner/bitbucket pipelines">
           <img src="~/assets/docker.svg" />
         </IndexExpertise>
@@ -43,7 +43,7 @@
       <v-col cols="12" sm="6" lg="4">
         <Project name="Kickoff Legends" :description="$t('index.projects.kol')" />
       </v-col>
-      <v-col cols="4">
+      <v-col cols="12" sm="6" lg="4">
         <Project name="TradeSpecifix" :description="$t('index.projects.tradespecifix')" />
       </v-col>
     </v-row>
