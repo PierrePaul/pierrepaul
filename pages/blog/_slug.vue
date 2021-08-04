@@ -25,7 +25,6 @@ export default {
   async asyncData ({ $content, params }) {
     const articles = await $content('blog', {deep: true}).where({'slug': params.slug}).fetch()
     const article = articles[0]
-    console.log(article)
     return {
       article
     }
