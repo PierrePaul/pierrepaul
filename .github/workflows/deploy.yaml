@@ -1,0 +1,16 @@
+name: Deploy
+on:
+  push:
+    branches:
+      - main 
+jobs:
+  deploy:
+    name: Deploy
+    steps:
+      - uses: actions/checkout@master
+      - name: Push to prod server
+        run: | 
+            ssh-keyscan -t rsa dev.fixrs.dev >> ~/.ssh/known_hosts
+            git remote add equiterre dokku@dev.fixrs.dev:pierrepaul-eth || true
+            git fetch --unshallow origin
+            git push pierrepaul master:master
