@@ -1,5 +1,5 @@
 ---
-title: Set limits docker containers, when using dokku
+title: Set limits to docker containers, when using dokku
 date: 2022-03-13
 category: sysadmin
 tags: dokku
