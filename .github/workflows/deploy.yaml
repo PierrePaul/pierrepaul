@@ -9,6 +9,9 @@ jobs:
     name: Deploy
     steps:
       - uses: actions/checkout@main
+      - uses: webfactory/ssh-agent@v0.5.4
+          with:
+            ssh-private-key: ${{ secrets.PRIVATEKEY }}
       - name: Push to prod server
         run: | 
             mkdir -p ~/.ssh/
