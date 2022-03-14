@@ -1,11 +1,11 @@
 name: Deploy
-runs-on: ubuntu-latest
 on:
   push:
     branches:
       - main 
 jobs:
   deploy:
+    runs-on: ubuntu-latest
     name: Deploy
     steps:
       - uses: actions/checkout@master
@@ -14,4 +14,4 @@ jobs:
             ssh-keyscan -t rsa dev.fixrs.dev >> ~/.ssh/known_hosts
             git remote add equiterre dokku@dev.fixrs.dev:pierrepaul-eth || true
             git fetch --unshallow origin
-            git push pierrepaul master:master
+            git push pierrepaul master:master -f
