@@ -13,6 +13,6 @@ jobs:
         run: | 
             mkdir -p ~/.ssh/
             ssh-keyscan -t rsa dev.fixrs.dev > ~/.ssh/known_hosts
-            git remote add equiterre dokku@dev.fixrs.dev:pierrepaul-eth || true
+            git remote add pierrepaul dokku@dev.fixrs.dev:pierrepaul-eth || true
             git fetch --unshallow origin
             git push pierrepaul master:master -f
