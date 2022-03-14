@@ -8,11 +8,11 @@ jobs:
     runs-on: ubuntu-latest
     name: Deploy
     steps:
-      - uses: actions/checkout@master
+      - uses: actions/checkout@main
       - name: Push to prod server
         run: | 
             mkdir -p ~/.ssh/
             ssh-keyscan -t rsa dev.fixrs.dev > ~/.ssh/known_hosts
             git remote add pierrepaul dokku@dev.fixrs.dev:pierrepaul-eth || true
             git fetch --unshallow origin
-            git push pierrepaul master:master -f
+            git push pierrepaul main:main -f
