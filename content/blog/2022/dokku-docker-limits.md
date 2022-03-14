@@ -22,7 +22,7 @@ If you look at the official [documentation](https://dokku.com/docs/advanced-usag
 
 Let me rephrase some of it like this : `Values specified are dependent on the docker scheduler.`
 
-This scheduler can vary a bit from Operating system to another. So this article will talk about the default docker scheduler on Ubuntu 18.04 LTS.
+This scheduler can vary a bit from Operating System to another. So this article will talk about the default docker scheduler on Ubuntu 18.04 LTS.
 
 You can set a good variety of [limits](https://dokku.com/docs/deployment/schedulers/docker-local/#supported-resource-management-properties): 
 
@@ -57,7 +57,7 @@ dokku resource:limit <your_app> --network-ingress 1g --network-egress 1g
 
 For those unfamiliar with the terms, `ingress` means incoming traffic, `egress` means outgoing traffic.
 
-At any time you can your `report` with `dokku resource:report <your_app>`.
+At any time you can read your `report` with `dokku resource:report <your_app>`.
 
 Very important
 --------------
@@ -70,4 +70,4 @@ dokku ps:restart <your_app>
 
 It's also a good hygiene to do it, instead of having a bad surprise at the next automatic deploy of your `<you_app>`.
 
-Have fun!
+**Have fun!***
