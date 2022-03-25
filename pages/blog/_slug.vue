@@ -28,6 +28,33 @@ export default {
     return {
       article
     }
+  },
+  head() {
+    return {
+      title: this.article.title,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.article.summary
+        },
+        {
+          hid: 'og:title',
+          name: 'og:title',
+          content: this.article.title
+        },
+        {
+          hid: 'og:description',
+          name: 'og:description',
+          content: this.article.summary
+        },
+        {
+          hid: 'og:image',
+          name: 'og:image',
+          content: this.article.cover
+        }
+      ]
+    }
   }
 }
 </script>
