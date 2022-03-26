@@ -2,7 +2,7 @@ name: Deploy
 on:
   push:
     branches:
-      - main 
+      - main
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -13,9 +13,9 @@ jobs:
         with:
           ssh-private-key: ${{ secrets.PRIVATEKEY }}
       - name: Push to prod server
-        run: | 
+        run: |
             mkdir -p ~/.ssh/
             ssh-keyscan -t rsa dev.fixrs.dev > ~/.ssh/known_hosts
-            git remote add pierrepaul dokku@dev.fixrs.dev:pierrepaul-eth || true
+            git remote add pierrepaul dokku@dev.fixrs.dev:pierrepaul
             git fetch --unshallow origin
             git push pierrepaul main:main -f
