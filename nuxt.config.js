@@ -34,7 +34,7 @@ export default {
     'nuxt-i18n',
   ],
   i18n: {
-    //baseUrl: 'https://pierre-paul.com',
+    baseUrl: 'https://pierre-paul.com',
     locales: [
       {
         name: 'English',

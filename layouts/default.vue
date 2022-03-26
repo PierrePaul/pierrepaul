@@ -33,9 +33,12 @@
         </v-list-item-group>
       </v-list>
     </v-navigation-drawer>
-    <div class="language-switcher">
-      <nuxt-link :to="switchLocalePath('en')" v-if="$i18n.locale !== 'en'">English</nuxt-link>
-      <nuxt-link :to="switchLocalePath('fr')" v-if="$i18n.locale !== 'fr'">Français</nuxt-link>
+    <div class="language-switcher" v-if="availableLocales.length > 0">
+      <nuxt-link
+        v-for="locale in availableLocales"
+        :key="locale.code"
+        :to="switchLocalePath(locale.code)">{{ locale.name }}</nuxt-link>
+
     </div>
     <v-main>
       <v-container fluid>
@@ -95,6 +98,12 @@ export default {
   computed: {
     mini() {
       return this.$vuetify.breakpoint.mdAndDown;
+    },
+    availableLocales () {
+      if (this.$route.name === 'blog-slug___en' || this.$route.name === 'blog-slug___fr') {
+        return [];
+      }
+      return this.$i18n.locales.filter(i => i.code !== this.$i18n.locale)
     }
   },
   mounted() {
