@@ -31,7 +31,7 @@ export default {
   ],
   modules: [
     '@nuxt/content',
-    'nuxt-i18n',
+    '@nuxtjs/i18n',
   ],
   i18n: {
     baseUrl: 'https://pierre-paul.com',
