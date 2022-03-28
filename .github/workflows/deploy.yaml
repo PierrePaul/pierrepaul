@@ -18,4 +18,4 @@ jobs:
             ssh-keyscan -t rsa dev.fixrs.dev > ~/.ssh/known_hosts
             git remote add pierrepaul dokku@dev.fixrs.dev:pierrepaul
             git fetch --unshallow origin
-            git push pierrepaul main:main -f
+            git push pierrepaul main:master -f

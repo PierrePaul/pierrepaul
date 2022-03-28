@@ -6,8 +6,6 @@ tags: drupal, coding, php
 slug: my-first-drupal-contrib-module-zookeeper
 summary: Even though I have been working with Drupal for more than 10 years, I have never published an open-source contrib module. Today I did.
 cover: /images/2022/zookeeper.png
-pictureCopyrightsText:
-pictureCopyrights: 
 status: published
 language: en
 ---
