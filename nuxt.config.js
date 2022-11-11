@@ -1,7 +1,7 @@
 import colors from 'vuetify/es5/util/colors'
 
 export default {
-  ssr: false,
+  ssr: true,
   target: 'static',
   head: {
     titleTemplate: '%s - Pierre-Paul Lefebvre',
@@ -31,9 +31,10 @@ export default {
   ],
   modules: [
     '@nuxt/content',
-    'nuxt-i18n',
+    '@nuxtjs/i18n',
   ],
   i18n: {
+    baseUrl: 'https://pierre-paul.com',
     locales: [
       {
         name: 'English',

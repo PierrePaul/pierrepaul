@@ -28,6 +28,33 @@ export default {
     return {
       article
     }
+  },
+  head() {
+    return {
+      title: this.article.title,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.article.summary
+        },
+        {
+          hid: 'og:title',
+          name: 'og:title',
+          content: this.article.title
+        },
+        {
+          hid: 'og:description',
+          name: 'og:description',
+          content: this.article.summary
+        },
+        {
+          hid: 'og:image',
+          name: 'og:image',
+          content: this.article.cover
+        }
+      ]
+    }
   }
 }
 </script>
@@ -50,6 +77,9 @@ a.cover-copyright {
   text-decoration: none;
   color: black;
   transition: all ease-out 0.2s;
+}
+.v-application .article ul {
+  padding: 0 0 1em 1em;
 }
 .v-application .article a:hover {
   color: #ff3a00;

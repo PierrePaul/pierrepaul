@@ -1,0 +1,21 @@
+name: Deploy
+on:
+  push:
+    branches:
+      - main
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    name: Deploy
+    steps:
+      - uses: actions/checkout@main
+      - uses: webfactory/ssh-agent@v0.5.4
+        with:
+          ssh-private-key: ${{ secrets.PRIVATEKEY }}
+      - name: Push to prod server
+        run: |
+            mkdir -p ~/.ssh/
+            ssh-keyscan -t rsa dev.fixrs.dev > ~/.ssh/known_hosts
+            git remote add pierrepaul dokku@dev.fixrs.dev:pierrepaul
+            git fetch --unshallow origin
+            git push pierrepaul main:master -f
