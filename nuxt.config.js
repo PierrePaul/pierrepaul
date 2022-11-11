@@ -21,10 +21,8 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
-  css: [
-  ],
-  plugins: [
-  ],
+  css: [],
+  plugins: [],
   components: true,
   buildModules: [
     '@nuxtjs/vuetify',

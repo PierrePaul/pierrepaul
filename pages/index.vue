@@ -74,9 +74,11 @@
       </v-col>
       <v-col cols="12" v-if="$i18n.locale === 'fr'" class="text-body-1">
         <p>Vous pouvez me contacter via pierrepaul[@]fixrs.ca ou via <a href="https://www.linkedin.com/in/pierrepaull/" target="_blank">LinkedIn</a>.</p>
+        <p>Ou encore via <a rel="me" href="https://mastodon.social/@pierrepaul">Mastodon</a>.</p>
       </v-col>
       <v-col cols="12" v-if="$i18n.locale === 'en'" class="text-body-1">
         <p>You can contact me via pierrepaul[@]fixrs.ca ou via <a href="https://www.linkedin.com/in/pierrepaull/" target="_blank">LinkedIn</a>.</p>
+        <p>Or on <a rel="me" href="https://mastodon.social/@pierrepaul">Mastodon</a>.</p>
       </v-col>
     </v-row>
   </v-container>
