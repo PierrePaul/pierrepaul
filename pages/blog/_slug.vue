@@ -11,6 +11,7 @@
       <v-row>
         <v-col cols="12">
           <h1>{{ article.title }}</h1>
+          <p style="font-size: 0.9rem;">{{ article.date|formatDate }}</p>
           <nuxt-content :document="article" />
         </v-col>
       </v-row>
@@ -27,6 +28,12 @@ export default {
     const article = articles[0]
     return {
       article
+    }
+  },
+  filters: {
+    formatDate: function(date) {
+      const dateFormatted = date.slice(0, 10)
+      return dateFormatted
     }
   },
   head() {
