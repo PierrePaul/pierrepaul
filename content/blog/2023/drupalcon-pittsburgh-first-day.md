@@ -3,7 +3,7 @@ title: First day at Drupalcon Pittsburgh 2023
 date: 2023-06-05
 category: Drupal
 tags: Open Source
-slug: My first day at Drupalcon Pittsburgh 2023
+slug: my-first-day-at-Drupalcon-Pittsburgh-2023
 summary: My first drupalcon in more than 10 years. It feels good to be back after this hiatus.
 cover: /images/2023/rooster.jpg
 pictureCopyrightsText:
