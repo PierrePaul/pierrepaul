@@ -3,6 +3,9 @@ import colors from 'vuetify/es5/util/colors'
 export default {
   ssr: true,
   target: 'static',
+  server: {
+    'host': '0',
+  },
   head: {
     titleTemplate: '%s - Pierre-Paul Lefebvre',
     title: 'Pierre-Paul Lefebvre',

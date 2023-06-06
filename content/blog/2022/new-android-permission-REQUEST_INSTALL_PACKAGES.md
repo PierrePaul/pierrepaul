@@ -12,7 +12,14 @@ status: draft
 language: en
 ---
 
-Earlier this year Google introduced a new permission called REQUEST_INSTALL_PACKAGES. A lot of people are using one
+Earlier this year Google introduced some policy changes that probably affects a lot of flutter dev at the moment. If your app is suddenly getting rejected at the store because of the permission `REQUEST_INSTALL_PACKAGES`, you're likely affected by the recent policy change.
+See this [video](https://www.youtube.com/watch?v=6Jv_eyCgVDg) from Google that I completely missed in April.
+
+So you're likely wondering why all of the sudden your app is getting rejected even if you didn't add any permission recently.
+
+A lot of flutter app on the market are using the [open_file](https://pub.dev/packages/open_file) package. If you don't, maybe one of the package you're using is calling it.
+One of the issue(or feature) `open_file`, is the ability to install arbitrary apps
+A lot of people are using one
 very popular flutter extension called `open_url`.
 
 # The multiple tracks issue
