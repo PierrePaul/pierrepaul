@@ -46,7 +46,7 @@ of the H, prepare yourself for a good walk. You won't miss the beginning of the 
 Jam pack...
 ----
 
-Like any other conference like this, it's hard to really get people interest level in specific sessions. I've attended a few sessions today where people had to watch the entire 50 minutes of the session standing up.
+Like any other conference like this, it's hard to really guess people interest level in specific sessions. I've attended a few sessions today where people had to watch the entire 50 minutes of the session standing up.
 My first session, I guess it was my own fault for arriving right on time, was full. I did not repeat the same mistake today.
 
 The takeaway
