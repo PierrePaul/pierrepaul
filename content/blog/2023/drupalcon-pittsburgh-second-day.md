@@ -6,7 +6,7 @@ tags: Open Source
 slug: second-day-drupalcon-pittsburgh-2023
 summary: Second day in Pittsburgh!
 cover: /images/2023/
-status: published
+status: draft
 language: en
 ---
 
