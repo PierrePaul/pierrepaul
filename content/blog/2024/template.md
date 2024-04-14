@@ -1,11 +1,11 @@
 ---
 title:  draft
-date: 2022-02-20
+date: 2024-04-14
 category: /dev/random
 tags: 
 slug: template
 summary: 
-cover: /images/2022/
+cover: /images/2024/
 pictureCopyrightsText:
 pictureCopyrights: 
 status: draft
