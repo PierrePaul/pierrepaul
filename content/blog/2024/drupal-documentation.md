@@ -18,7 +18,7 @@ A Google search for a simple problem will likely return an answer to your proble
 You can of course try your hand with ChatGPT, but you might end up with some frankenstein code that will never work, no matter on which version of Drupal you're working on.
 
 While it might not answer all your question yet, there's been an ongoing initiative to make a [Drupal book](https://selwynpolit.github.io/d9book/), with
-updated examples with chapter with a dedicated focus (like `how to work with batch and queue`, `how to work with the Config`, etc).
+updated examples, each chapter has a dedicated focus (like `how to work with batch and queue`, `how to work with the Config`, etc).
 
 This is an open-source book, which can be contributed over on [Github](https://github.com/selwynpolit/d9book).
 Drupal also being open-source, it's always easy and fun to read the source itself instead of the documentation, but the book
