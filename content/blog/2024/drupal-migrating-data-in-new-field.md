@@ -1,5 +1,5 @@
 ---
-title:  draft
+title:  Migrating data from an old field to a new field
 date: 2024-05-07
 category: Drupal
 tags: Drupal, Migration
