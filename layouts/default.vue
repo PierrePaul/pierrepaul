@@ -200,4 +200,7 @@ ol {
 .theme--light.v-application code {
   background-color: #f5f2f0;
 }
+.theme--light.v-application .nuxt-content-highlight pre code {
+  background-color: transparent;
+}
 </style>

@@ -36,8 +36,7 @@ The plan is to:
 
 In my case, my old field is called `field_description` while the new one is called `field_rich_description`, which accepts HTML content.
 
-To make sure I dont have too many configs exported later on, I will import the config right now to make sure my DB is up 
-to date with my config files.
+To make sure I don't have too many configs exported later on, I will import the config right now to make sure my DB is up-to- date with my config files.
 
 ```bash
 ddev drush cim -y
