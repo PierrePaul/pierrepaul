@@ -2,8 +2,13 @@
   <div class="blog article">
     <v-row>
       <v-col cols="12" style="padding: 0">
-        <v-img :src="article.cover" v-if="article.cover">
-          <a :href="article.pictureCopyrights" class="cover-copyright" v-if="article.pictureCopyrights" target="_blank">{{ article.pictureCopyrightsText }}</a>
+        <v-img :src="article.cover" v-if="article.cover" alt="">
+          <template v-if="article.pictureCopyrights">
+            <a :href="article.pictureCopyrights" class="cover-copyright" v-if="article.pictureCopyrights" target="_blank">{{ article.pictureCopyrightsText }}</a>
+          </template>
+          <template v-else>
+           <span class="cover-copyright">{{ article.pictureCopyrightsText }}</span>
+          </template>
         </v-img>
       </v-col>
     </v-row>
@@ -71,6 +76,8 @@ export default {
   color: whitesmoke;
   bottom: 10px;
   right: 10px;
+  text-shadow: 1px 1px 1px #222729;
+  font-weight: bold;
 }
 a.cover-copyright {
   color: whitesmoke !important;

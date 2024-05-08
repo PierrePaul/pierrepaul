@@ -85,7 +85,7 @@ export default {
           hash: '#contact',
         },
         {
-          icon: 'mdi-face',
+          icon: 'mdi-book-outline',
           title: 'nav.blog',
           to: 'blog'
         },
@@ -180,6 +180,17 @@ a.blog-link {
 h1, h2, h3 {
   padding: 0.5em 0 0.5em 0;
 }
+ol {
+  margin-bottom: 1rem;
+  border: dotted #666;
+  padding: 0.5rem;
+  li {
+    &::marker {
+      color: #666;
+      font-size: 1rem;
+    }
+  }
+}
 .mobile-drawer {
   position: fixed;
   left: 10px;
@@ -187,6 +198,6 @@ h1, h2, h3 {
   z-index: 999;
 }
 .theme--light.v-application code {
-  background-color: transparent;
+  background-color: #f5f2f0;
 }
 </style>
