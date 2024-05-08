@@ -113,6 +113,12 @@ export default {
 </script>
 
 <style>
+.mobile-drawer {
+  position: fixed;
+  left: 10px;
+  top: 10px;
+  z-index: 999;
+}
 nav .theme--light.v-list-item.nav-links, nav .theme--light.v-list-item:not(.v-list-item--active):not(.v-list-item--disabled), nav .theme--light.v-icon {
   color: whitesmoke !important;
 }
@@ -190,12 +196,6 @@ ol {
       font-size: 1rem;
     }
   }
-}
-.mobile-drawer {
-  position: fixed;
-  left: 10px;
-  top: 10px;
-  z-index: 999;
 }
 .theme--light.v-application code {
   background-color: #f5f2f0;
