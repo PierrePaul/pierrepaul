@@ -1,7 +1,7 @@
 <template>
   <div class="blog">
     <v-row v-if="pages.length">
-      <v-col cols="6" v-for="(page, idx) in pages" :key="idx">
+      <v-col cols="12" md="6" lg="6" xl="4" v-for="(page, idx) in pages" :key="idx">
         <v-card>
           <nuxt-link :to="{name: 'blog-slug___' + $i18n.locale, params: {slug: page.slug}}" class="blog-link">
           <v-img :src="page.cover" v-if="page.cover" height="200px">
@@ -41,3 +41,8 @@ export default {
   }
 }
 </script>
+<style>
+.v-card__title {
+ background-color: rgba(0, 0, 0, 0.70);
+}
+</style>

@@ -72,12 +72,14 @@ export default {
 </script>
 <style>
 .cover-copyright {
-  position: absolute;
+  background-color: rgba(0, 0, 0, 0.70);
+  bottom: 0px;
   color: whitesmoke;
-  bottom: 10px;
-  right: 10px;
+  padding-right: 1rem;
+  position: absolute;
   text-shadow: 1px 1px 1px #222729;
-  font-weight: bold;
+  text-align: right;
+  width: 100%;
 }
 a.cover-copyright {
   color: whitesmoke !important;
