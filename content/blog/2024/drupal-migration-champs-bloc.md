@@ -33,7 +33,7 @@ Dans mon cas, mon ancien champ s'appelle `field_description`. Je vais ajouter un
 
 Pour éviter des problèmes lors de l'exportation du nouveau champ plus tard, je vais importer ma configuration tout de suite.
 
-```
+```bash
 ddev drush cim -y
 ```
 
@@ -45,13 +45,13 @@ Une fois le champ ajouté et configuré à notre goût, c'est le temps d'exporte
 
 ## 2. Exportation de la configuration
 
-```
+```bash
 ddev drush cex -y
 ```
 
 Si vous n'avez pas roulé le `cim` plus tot, c'est possible que vous ayez plus de changements que prévus.
 
-Votre résultat devrait etre similaire à ceci :
+Votre résultat devrait être similaire à ceci :
 
 ![Exportation de la configuration après l'ajout d'un nouveau champ](/images/2024/migration/export.png)
 
@@ -74,19 +74,19 @@ Normalement lors de d'un déploiement, nous voulons exécuter ces commandes dans
 Le `updatedb`, aussi appelé le [hook update](https://www.drupal.org/docs/drupal-apis/update-api/introduction-to-update-api-for-drupal-8) est l'endroit parfait
 pour migrer nos données d'un champ à l'autre, mais nous avons un problème d'oeuf et la poule ici.
 
-La configuration pour notre nouveau champ sera importé seulement à la dernière étape. Si nous effacons l'ancien champ
+La configuration pour notre nouveau champ sera importé seulement à la dernière étape. Si nous effaçons l'ancien champ
  dans le meme déploiement, nous risquons aussi de perdre les données avant de pouvoir les migrer, advenant que nous roulons le `cim` avant le `updatedb`.
 
 Nous allons donc faire trois hook_update_N pour :
 
 1. Lire les fichiers de config qui ajoute le champ
-2. Forcer l'import tout de suite
+2. Migrer les données dans le nouveau champ
 3. Effacer l'ancien champ
 
 Les `hook_update_N` doive se trouver dans un de vos modules personalisés (custom), spécifiquement dans le fichier `.install`.
 Pour les besoins du guide, je vais appeler ce module `mon_module`.
 
-Pour notre premier hook :
+Pour notre premier hook, dans notre fichier `mon_module.install` :
 
 ```php
 function mon_module_update_1001() {
