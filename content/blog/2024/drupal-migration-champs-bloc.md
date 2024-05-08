@@ -11,8 +11,10 @@ language: fr
 ---
 
 Ça nous arrive tous. Les requis initiaux mentionnent un nouveau champ de type texte. Deux mois plus tard, on se rend compte que ce champ devrait pouvoir accepter du contenu HTML.
+
 Pour ce petit guide, je vais présumer que vous utilisez le système de configuration Drupal et `ddev`.
-Si vous n'utilisez pas `ddev`, retirer la mention `ddev` devant les commandes 😊 Si vous n'utilisez pas `ddev`, retirer la mention `ddev` devant les commandes 😊.
+
+Si vous n'utilisez pas `ddev`, retirer la mention `ddev` devant les commandes 😊.
 
 Le guide en question est spécifiquement pour un nouveau champ dans un bloc. Le bloc dans mon example est utilisé dans 
 layout builder.
