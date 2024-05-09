@@ -27,7 +27,7 @@
               <v-icon v-text="item.icon"></v-icon>
             </v-list-item-icon>
             <v-list-item-content>
-              <v-list-item-title v-text="$t(item.title)"></v-list-item-title>
+              <v-list-item-title v-text="$t(item.title)" class="title"></v-list-item-title>
             </v-list-item-content>
           </v-list-item>
         </v-list-item-group>
@@ -112,7 +112,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
 .mobile-drawer {
   position: fixed;
   left: 10px;
@@ -166,6 +166,15 @@ h2 {
   font-weight: 200;
   font-size: 2em;
 }
+a.blog-link {
+  text-decoration: none;
+}
+.blog .title {
+  color: whitesmoke;
+  font-weight: bold;
+  font-size: 1.7em;
+  text-shadow: #c3c3c3 1px 0 10px;
+}
 .brand {
   font-size: 1.3em;
   font-weight: 700;
@@ -173,18 +182,9 @@ h2 {
   width: 100%;
   padding: 1em;
   color: whitesmoke;
-  a {
-    color: white;
-  }
 }
-.blog .v-card__title {
+.v-application .brand a {
   color: whitesmoke;
-  font-weight: bold;
-  font-size: 1.7em;
-  text-shadow: #c3c3c3 1px 0 10px;
-}
-a.blog-link {
-  text-decoration: none;
 }
 h1, h2, h3 {
   padding: 0.5em 0 0.5em 0;
