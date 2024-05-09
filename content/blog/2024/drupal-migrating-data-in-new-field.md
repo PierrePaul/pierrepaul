@@ -133,17 +133,20 @@ function my_module_update_1002() {
   $blocks =  \Drupal\block_content\Entity\BlockContent::loadMultiple($nids);
   foreach($blocks as $block_content) {
     $current_value = $block_content->get('field_description')->getValue();
-    $block_content->set('field_rich_description', $current_value);
-    try {
-      $block_content->save();
-    } catch (\Drupal\Core\Entity\EntityStorageException $exception) {
-      \Drupal::logger('my_module')->error('my_module_update_1002: ' . $exception->getMessage());
+     if (!empty($current_value)) {
+      $current_value = \Drupal\Component\Utility\Xss::filter($current_value[0]['value']);
+      $block_content->set('field_rich_description', $current_value);
+      try {
+        $block_content->save();
+      } catch (\Drupal\Core\Entity\EntityStorageException $exception) {
+        \Drupal::logger('my_module')->error('my_module_update_1002: ' . $exception->getMessage());
+      }
     }
   }
 }
 ```
 
-I'm not doing any transformation here. I'm just copying the data into the new field.
+I'm doing basic filtering with `Xss::filter`, but nothing crazy. Then I'm just copying the data into the new field.
 
 And lastly, one last function to delete the old field, `field_description`.
 Keep in mind this one is kind of optional;

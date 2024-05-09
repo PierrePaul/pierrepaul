@@ -128,17 +128,20 @@ function mon_module_update_1002() {
   $blocks =  \Drupal\block_content\Entity\BlockContent::loadMultiple($nids);
   foreach($blocks as $block_content) {
     $current_value = $block_content->get('field_description')->getValue();
-    $block_content->set('field_rich_description', $current_value);
-    try {
-      $block_content->save();
-    } catch (\Drupal\Core\Entity\EntityStorageException $exception) {
-      \Drupal::logger('mon_module')->error('mon_module_update_1002: ' . $exception->getMessage());
+     if (!empty($current_value)) {
+      $current_value = \Drupal\Component\Utility\Xss::filter($current_value[0]['value']);
+      $block_content->set('field_rich_description', $current_value);
+      try {
+        $block_content->save();
+      } catch (\Drupal\Core\Entity\EntityStorageException $exception) {
+        \Drupal::logger('mon_module')->error('mon_module_update_1002: ' . $exception->getMessage());
+      }
     }
   }
 }
 ```
 
-Je ne fais aucune transformation ici, je prends simplement les données d'un champ que j'ajoute à un autre champ.
+Je fais un nettoyage de base avec `Xss::filter`, ensuite, j'ajoute la valeur nettoyée dans le nouveau champ.
 
 Pour finir, une dernière fonction pour effacer mon ancien champ, `field_description` :
 
