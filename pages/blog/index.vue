@@ -5,7 +5,7 @@
         <v-card>
           <nuxt-link :to="{name: 'blog-slug___' + $i18n.locale, params: {slug: page.slug}}" class="blog-link">
           <v-img :src="page.cover" v-if="page.cover" height="200px">
-            <v-card-title>{{ page.title }}</v-card-title>
+            <v-card-title class="title">{{ page.title }}</v-card-title>
           </v-img>
           </nuxt-link>
           <v-card-subtitle>
@@ -41,8 +41,8 @@ export default {
   }
 }
 </script>
-<style>
-.v-card__title {
+<style scoped>
+.title {
  background-color: rgba(0, 0, 0, 0.70);
 }
 </style>

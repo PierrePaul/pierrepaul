@@ -17,17 +17,17 @@
       <v-col cols="12" align="center">
         <h2 id="expertise" class="text-h2">Expertise</h2>
       </v-col>
-      <v-col cols="12" md="4" sm="6">
+      <v-col cols="12" md="4" sm="6" class="text-center">
         <IndexExpertise title="Python" subtitle="Django, Wagtail, I love python">
           <img src="~/assets/django.svg" />
         </IndexExpertise>
       </v-col>
-      <v-col cols="12" md="4" sm="6">
+      <v-col cols="12" md="4" sm="6" class="text-center">
         <IndexExpertise title="PHP" subtitle="Drupal 7/8/9, Symphony">
           <img src="~/assets/drupal.svg" />
         </IndexExpertise>
       </v-col>
-      <v-col cols="12" md="4" sm="6">
+      <v-col cols="12" md="4" sm="6" class="text-center">
         <IndexExpertise title="DevOps/CI" subtitle="Docker, docker-compose, Vagrant, Ansible, Gitlab runner/bitbucket pipelines">
           <img src="~/assets/docker.svg" />
         </IndexExpertise>

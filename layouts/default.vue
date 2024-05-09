@@ -13,7 +13,7 @@
       width="325"
       v-model="drawer"
     >
-      <div class="brand">Pierre Paul</div>
+      <div class="brand"><nuxt-link to="/">Pierre Paul</nuxt-link></div>
       <v-list>
         <v-list-item-group>
           <v-list-item
@@ -173,6 +173,9 @@ h2 {
   width: 100%;
   padding: 1em;
   color: whitesmoke;
+  a {
+    color: white;
+  }
 }
 .blog .v-card__title {
   color: whitesmoke;
