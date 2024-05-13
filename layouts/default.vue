@@ -204,6 +204,7 @@ ol {
   background-color: #f5f2f0;
 }
 .theme--light.v-application .nuxt-content-highlight pre code {
+  padding: 0;
   background-color: transparent;
 }
 </style>
