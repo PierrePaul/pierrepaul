@@ -75,11 +75,13 @@
         <h2 id="contact" class="text-h2">{{$t('index.contact')}}</h2>
       </v-col>
       <v-col cols="12" v-if="$i18n.locale === 'fr'" class="text-body-1">
-        <p>Vous pouvez me contacter via info[@]pierre-paul.com ou via <a href="https://www.linkedin.com/in/pierrepaull/" target="_blank">LinkedIn</a>.</p>
+        <p>Vous pouvez me contacter via info[@]pierre-paul.com (<a href="/static/pierrepaul.pgp" target="_blank">clef PGP</a>) ou via <a href="https://www.linkedin.com/in/pierrepaull/" target="_blank">LinkedIn</a>.</p>
+        <p>Pour mon courriel professionnel, pp.lefebvre[@]banq.qc.ca <a href="/static/banq.pgp" target="_blank">ma clef est ici</a>.</p>
         <p>Ou encore via <a rel="me" href="https://mastodon.social/@pierrepaul">Mastodon</a>.</p>
       </v-col>
       <v-col cols="12" v-if="$i18n.locale === 'en'" class="text-body-1">
-        <p>You can contact me via info[@]pierre-paul.com ou via <a href="https://www.linkedin.com/in/pierrepaull/" target="_blank">LinkedIn</a>.</p>
+        <p>You can contact me via info[@]pierre-paul.com (<a href="/static/pierrepaul.pgp" target="_blank">PGP key</a>) ou via <a href="https://www.linkedin.com/in/pierrepaull/" target="_blank">LinkedIn</a>.</p>
+        <p>For my professional email pp.lefebvre[@]banq.qc.ca you can get my <a href="/static/banq.pgp" target="_blank">PGP key here</a>.</p>
         <p>Or on <a rel="me" href="https://mastodon.social/@pierrepaul">Mastodon</a>.</p>
       </v-col>
     </v-row>
