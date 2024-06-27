@@ -2,6 +2,7 @@
   <v-container>
     <v-row>
       <v-col cols="12" align="center">
+	      <h1>salut tout le monde</h1>
         <h1 id="top" class="text-h1">{{ $t("index.title") }}</h1>
       </v-col>
     </v-row>
