@@ -12,7 +12,7 @@ status: published
 language: en
 ---
 
-I'm doing my best to watch any Drupalcon sessions recording, but I have to admit, I could do a better job at getting
+I'm doing my best to watch any Drupalcon session recordings, but I have to admit, I could do a better job at getting
 involved in the tickets and the initiatives.
 
 There are still a few tickets that I'm following, even if I'm not actively contributing to them. I figured it might be interesting to other people, so here it is!
