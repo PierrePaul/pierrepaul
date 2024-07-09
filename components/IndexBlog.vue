@@ -24,5 +24,6 @@ export default {
 <style scoped>
 .title {
   background-color: rgba(0, 0, 0, 0.70);
+  word-break: break-word;
 }
 </style>
