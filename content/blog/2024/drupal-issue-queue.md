@@ -4,7 +4,7 @@ date: 2024-07-09
 category: Drupal
 tags: Drupal, Open-source
 slug: interesting-drupal-issue-queue-tickets
-summary: I don't follow enough initiatives on the Drupal project, but here's a few tickets **I do** follow! 
+summary: I don't follow enough initiatives on the Drupal project, but here's a few tickets I do follow! 
 cover: /images/2024/binoculars.webp
 pictureCopyrightsText:
 pictureCopyrights: 
