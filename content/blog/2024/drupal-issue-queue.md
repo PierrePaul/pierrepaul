@@ -12,7 +12,7 @@ status: published
 language: en
 ---
 
-I'm doing my best to watch any Drupalcon session recordings, but I have to admit, I could do a better job at getting
+I'm doing my best to watch every Drupalcon session recordings, but I have to admit, I could do a better job at getting
 involved in the tickets and the initiatives.
 
 There are still a few tickets that I'm following, even if I'm not actively contributing to them. I figured it might be interesting to other people, so here it is!
@@ -24,12 +24,14 @@ used in the new Experience Builder initiative, but everyone can benefit from thi
 
 ### [500 error with JSONAPI on Base Entity Fields](https://www.drupal.org/project/field_permissions/issues/3411976)
 
-We recently started doing some experimentations with the JSONAPI core module and we stumbled on an already reported bug.
+We recently started doing some experimentation with the JSONAPI core module, and we stumbled on an already reported bug.
 When making filters on base entity fields (like promote=true or sticky), it would crash the request. The proposed patch works well for us.
 
 ### [Wrong language field labels after `drush cr` because of Drush language negotiation](https://www.drupal.org/project/drupal/issues/3221375)
 
-This one is kind of a mess. In some random cases, when working on the BAnQ site, the `drush cex` command would export the configuration in french. It's super hard to reproduce 
+This one is kind of a mess.
+In some random cases, when working on the BAnQ site, the `drush cex` command would export the configuration in French.
+It's super hard to reproduce 
 consistently, so it's hard to say if the patch works (or even if it's actually doing something...).
 
 ### [FilterHtmlImageSecure filters out valid local svg images](https://www.drupal.org/project/drupal/issues/2855653)
@@ -43,6 +45,7 @@ I actually contributed to this one, but the patch is so out of date now... It's 
 
 ## User dashboard
 
-Drupal.org user dashboard is pretty useful to keep track of tickets. Just hit the follow-star icon!
+Drupal.org user dashboard is pretty useful to keep track of tickets.
+Hit the follow-star icon and it will show up in your personal dashboard.
 
 ![Follow the ticket on drupal.org](/images/2024/follow.png)
