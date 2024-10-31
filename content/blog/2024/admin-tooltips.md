@@ -29,7 +29,7 @@ be a challenge sometimes).
 It is pretty similar to the field help text you're most likely already used to, but admin_tooltips lets you
 be more verbose, as the text is not shown by default (only on hover) and doesn't encumber the interface.
 
-Which is always appreciated by content editors that have a lot of content to write, but can be used as a reminder for some less used content.
+Which is always appreciated by content editors that have a lot of content to write, but can be used as a reminder for some less used content types.
 It's also good documentation for new content editors and let onboard them faster.
 
 I added support for composer, so you're now able to install the module like most Drupal modules nowadays.
