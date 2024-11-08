@@ -78,11 +78,13 @@
         <p>Vous pouvez me contacter via info[@]pierre-paul.com (<a href="/pierrepaul.pgp" target="_blank">clef PGP</a>) ou via <a href="https://www.linkedin.com/in/pierrepaull/" target="_blank">LinkedIn</a>.</p>
         <p>Pour mon courriel professionnel, pp.lefebvre[@]banq.qc.ca <a href="/banq.pgp" target="_blank">ma clef est ici</a>.</p>
         <p>Ou encore via <a rel="me" href="https://mastodon.social/@pierrepaul">Mastodon</a>.</p>
+        <p>Je suis aussi <a href="https://calendar.app.google/aUUGZx9TunZZJo4B6">disponible le matin, pour prendre un petit café et jaser</a>.</p>
       </v-col>
       <v-col cols="12" v-if="$i18n.locale === 'en'" class="text-body-1">
         <p>You can contact me via info[@]pierre-paul.com (<a href="/pierrepaul.pgp" target="_blank">PGP key</a>) ou via <a href="https://www.linkedin.com/in/pierrepaull/" target="_blank">LinkedIn</a>.</p>
         <p>For my professional email pp.lefebvre[@]banq.qc.ca you can get my <a href="/banq.pgp" target="_blank">PGP key here</a>.</p>
         <p>Or on <a rel="me" href="https://mastodon.social/@pierrepaul">Mastodon</a>.</p>
+        <p>I'm also <a href="https://calendar.app.google/aUUGZx9TunZZJo4B6">available early in the morning for a coffee chat</a>.</p>
       </v-col>
     </v-row>
   </v-container>
