@@ -19,3 +19,8 @@ export default {
   props: ['title', 'subtitle']
 }
 </script>
+<style scoped>
+.v-card {
+  height: 360px;
+}
+</style>

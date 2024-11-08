@@ -11,10 +11,10 @@ export default {
     title: 'I am Pierre-Paul',
     latest: 'Latest blog posts',
     projects: {
-      title: 'Projects',
-      secondo: 'A private networking PWA app, based on django-drf and VueJS. It was a nice project to work on, to test our skills and dig more deeply into django channels.',
-      kol: 'A football/soccer game based on Flask (python) and AngularJS (+ a touch of phaser). People manage their football team, play against each others (in real time, thanks to websockets) or automated matches. This was a good chunk of my life at StudioQI as their CTO.',
-      tradespecifix: 'A django + react PWA application. Keeps track of Safety and security meetings done by workers, on construction site. Also used as a time logging application with GPS data.'
+      title: 'Featured projects',
+      banq: 'The Bibliothèque et Archives nationales du Québec (lit. \'National Library and Archives of Quebec\') or BAnQ is a Quebec government agency which manages the province\'s legal deposit system, national archives, and national library. I was extremely lucky to help migrate from dotCMS to Drupal a few years ago as a consultant and then lead their web development team, as an employee.',
+      inspq: 'The Institut national de santé publique du Québec needed help to migrate their Drupal 7 website to Drupal 8/9. While it was not all rainbows and sunshine, we were able to migrate the ~35 000 pages of their website in a few months. I was also in charge of training their team, so they could continue to work on their site after the mandate was complete.',
+      covidalert: 'The COVID alert app was an ambitious project, started at the beginning of the pandemic. I was recruited by the CDS to work on the portal, a django application dedicated to health practitioners, to generate a one time code to be used by the patients.',
     },
     me: 'Me',
     contact: 'Contact'
