@@ -12,9 +12,9 @@ export default {
     latest: 'Derniers articles',
     projects: {
       title: 'Projets',
-      secondo: 'Un réseau social privé, fait principalement avec django-drf et VueJS. Un projet intéressant qui m\'a permis d\'en apprendre un peu plus sur djang-channels et Nuxt.',
-      kol: 'Un jeu de futebol/soccer fait en Flask (python) et AngularJS (et une petite touche de PhaserJS). On peut y controller une équipe, gérer les joueurs et jouer contre d\'autres équipes en temps réel ou non. C\'était une bonne partie de ma vie chez StudioQi, en tant que CTO.',
-      tradespecifix: 'Une application PWA. Permet de savoir qui a remplis les formations de Sécurité au travail sur les chantiers de construction. Aussi utilisé comme application de timesheet, avec données GPS.'
+      banq: "Bibliothèque et Archives nationales du Québec (BAnQ) est une société d\'État québécoise née de la fusion de la Bibliothèque nationale du Québec et des Archives nationales du Québec, en 2006. J'ai eu la chance de les accompagner, en tant que consultant, dans leur migration de dotCMS vers Drupal 8/9 il y a deux ans. J'ai par la suite joins leur rang officiellement afin de diriger et former leur équipe web, spécialisée en Drupal.",
+      inspq: "Institut national de santé publique du Québec avait un projet ambitieux de migrer leur Drupal 7 vers une version plus récente. Le projet a connu des hauts et des bas, mais je peux affirmer aujourd'hui que les quelques 35 000 pages ont été migrées avec succès. J'étais aussi en charge de la formation de l'équipe Drupal, afin que l'INSPQ soit indépendant dans la gestion de leur nouveau site.",
+      covidalert: "COVID Alert était un projet ambiteux qui est démarré au début de la pandémie. J'ai été recruté par le CDS-SNC afin de travailler sur le portail réservé aux membres du personnel de la santé, qui permettait de générer un code unique pour le patient. Fait cocasse, j'ai été recruté par le CDS-SNC en répondant à une question python d'un employé sur Twitter/X.",
     },
     me: 'Moi',
     contact: 'Me contacter',

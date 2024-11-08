@@ -18,17 +18,17 @@
         <h2 id="expertise" class="text-h2">Expertise</h2>
       </v-col>
       <v-col cols="12" md="4" sm="6" class="text-center">
-        <IndexExpertise title="Python" subtitle="Django, Wagtail, I love python">
-          <img src="~/assets/django.svg" />
-        </IndexExpertise>
-      </v-col>
-      <v-col cols="12" md="4" sm="6" class="text-center">
-        <IndexExpertise title="PHP" subtitle="Drupal 7/8/9, Symphony">
+        <IndexExpertise title="PHP" subtitle="Drupal 7/8/9/10/11">
           <img src="~/assets/drupal.svg" />
         </IndexExpertise>
       </v-col>
       <v-col cols="12" md="4" sm="6" class="text-center">
-        <IndexExpertise title="DevOps/CI" subtitle="Docker, docker-compose, Vagrant, Ansible, Gitlab runner/bitbucket pipelines">
+        <IndexExpertise title="Python" subtitle="Django, Wagtail">
+          <img src="~/assets/django.svg" />
+        </IndexExpertise>
+      </v-col>
+      <v-col cols="12" md="4" sm="6" class="text-center">
+        <IndexExpertise title="DevOps/CI" subtitle="Docker, docker-compose, Gitlab/Github/Bitbucket and even Azure DevOps pipelines">
           <img src="~/assets/docker.svg" />
         </IndexExpertise>
       </v-col>
@@ -38,13 +38,13 @@
         <h2 id="projects" class="text-h2">{{ $t('index.projects.title') }}</h2>
       </v-col>
       <v-col cols="12" sm="6" lg="4">
-        <Project name="Secondo" :description="$t('index.projects.secondo')" />
+        <Project name="BAnQ" :description="$t('index.projects.banq')" image="banq.png" link="https://www.banq.qc.ca" />
       </v-col>
       <v-col cols="12" sm="6" lg="4">
-        <Project name="Kickoff Legends" :description="$t('index.projects.kol')" />
+        <Project name="INSPQ" :description="$t('index.projects.inspq')" image="inspq.png" link="https://www.inspq.qc.ca" />
       </v-col>
       <v-col cols="12" sm="6" lg="4">
-        <Project name="TradeSpecifix" :description="$t('index.projects.tradespecifix')" />
+        <Project name="COVID Alert Portal" :description="$t('index.projects.covidalert')" image="covidalert-portal.png" link="https://github.com/cds-snc/covid-alert-portal" />
       </v-col>
     </v-row>
     <v-row>
@@ -57,7 +57,7 @@
         <p>From November 2016 to May 2018, I was promoted CTO to a new Pheromone subentity named StudioQi, focused on creating games.</p>
         <p>Between August 2018 up to 2019, I have been working with Francois Viens on multiple (and very cool contracts), like Dis-Moi or TradeSpecifix.</p>
         <p>In 2019, with Edouard and Francois, we decided to create a new company, called FIXRS, where developers no longer need to choose between family and work.</p>
-        <p>In 2024, I decide to leave the entrepreneur world to join full time the <a href="https://www.banq.qc.ca">BAnQ</a> team full time, as a Drupal specialist.</p>
+        <p>In 2024, I decide to leave the entrepreneur world to join full time the <a href="https://www.banq.qc.ca">BAnQ</a> team full time, as a Drupal team lead.</p>
       </v-col>
       <v-col cols="12" v-if="$i18n.locale === 'fr'" class="text-body-1">
         <p>J'ai commencé ma carrière en tant que développeur web, suivant ma formation en informatique de gestion au collège de Maisonneuve et d'une année à l'ETS en génie informatique.</p>
@@ -67,7 +67,7 @@
         <p>En 2016, lors de l'ouverture de StudioQi, une sous entité de Phéromone, j'ai été promus au poste de CTO pour gérer l'équipe d'une vinghtaine de personnes.</p>
         <p>À l'été 2018, j'ai décidé de quitté StudioQi pour me joindre à Francois Viens, pour travailler sur le mandat de Dis-Moi, qui essait de prévenir le suicide chez les jeunes de 12-18 ans.</p>
         <p>Début 2019, avec Francois et Édouard, nous avons créer une nouvelle compagnie nommée FIXRS, où les développeurs n'ont plus à choisir entre famille et boulot.</p>
-        <p>En 2024 je décide de quitter l'aventure de l'entreprenariat pour me joindre à temps plein à <a href="https://www.banq.qc.ca">BAnQ</a> en tant que spécialiste Drupal.</p>
+        <p>En 2024 je décide de quitter l'aventure de l'entreprenariat pour me joindre à temps plein à <a href="https://www.banq.qc.ca">BAnQ</a> en tant que responsable technique, spécialiste Drupal.</p>
       </v-col>
     </v-row>
     <v-row>
