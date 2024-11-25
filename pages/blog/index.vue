@@ -1,5 +1,8 @@
 <template>
   <div class="blog">
+    <v-row class="warning" v-if="$i18n.locale === 'fr'">
+      Salut! J'écris plus souvent en anglais qu'en français (pour l'instant en tout cas)! N'hésite pas à changer la langue de la page, en haut à droite.
+    </v-row>
     <v-row v-if="pages.length">
       <v-col cols="12" md="6" lg="6" xl="4" v-for="(page, idx) in pages" :key="idx">
         <v-card>
