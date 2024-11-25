@@ -3,7 +3,7 @@ title: Les crochets (hooks) Drupal 11.1 et la programmation orientée objet.
 date: 2024-11-25
 category: Drupal
 tags: backend
-slug: drupal-11.1-oop-hooks-fr
+slug: drupal-11-1-oop-hooks-fr
 summary: Drupal 11.1 amène des changements importants et très attendus aux hooks.
 cover: /images/2024/hook.jpg
 pictureCopyrightsText: Kasia Derenda
