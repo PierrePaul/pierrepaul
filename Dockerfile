@@ -4,7 +4,7 @@ FROM node:22 AS build
 WORKDIR /src
 COPY . .
 RUN yarn install
-RUN yarn run generate
+RUN yarn run build
 
 # Stage 2: Production image
 FROM node:22-slim
