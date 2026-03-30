@@ -10,7 +10,7 @@
         </v-avatar>
       </v-col>
     </v-row>
-    <v-card-subtitle>{{ subtitle }}</v-card-subtitle>
+    <v-card-text>{{ subtitle }}</v-card-text>
   </v-card>
 </template>
 <script setup>
