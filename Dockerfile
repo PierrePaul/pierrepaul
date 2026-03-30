@@ -1,16 +1,18 @@
-FROM node:22
+# Stage 1: Build the project
+FROM node:22 AS build
 
-ENV APP_ROOT /src
-
-RUN mkdir ${APP_ROOT}
-WORKDIR ${APP_ROOT}
-ADD . ${APP_ROOT}
-
-RUN yarn 
-RUN yarn run build
+WORKDIR /src
+COPY . .
+RUN yarn install
 RUN yarn run generate
+
+# Stage 2: Production image
+FROM node:22-slim
+
+WORKDIR /src
+COPY --from=build /src/.output ./.output
 
 ENV HOST 0.0.0.0
 EXPOSE 3000
 
-CMD yarn run start
+CMD ["node", ".output/server/index.mjs"]
