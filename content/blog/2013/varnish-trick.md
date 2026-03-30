@@ -1,13 +1,15 @@
-Title: Ajouter le nom du backend dans Varnish
-Date: 2013-12-03
-Category: Varnish
-Tags: Sysadmin
-Slug: nom-backend-varnish
-Summary: Petit truc pour ajouter le nom du backend utilisé par Varnish lors de sa requête. Ça prend malheureusement un peu d'imagination pour réussir ce petit truc vraiment utile. Cet article devrait rendre le tout plus simple.
+---
+title: Ajouter le nom du backend dans Varnish
+language: fr
+date: 2013-12-03
+category: Varnish
+tags: Sysadmin
+slug: nom-backend-varnish
+summary: Petit truc pour ajouter le nom du backend utilisé par Varnish lors de sa requête. Ça prend malheureusement un peu d'imagination pour réussir ce petit truc vraiment utile. Cet article devrait rendre le tout plus simple.
 cover: images/2013/problems.pnb
-PictureCopyrights: http://tooga.deviantart.com/art/Problems-332896150
-Status: draft
-
+pictureCopyrights: http://tooga.deviantart.com/art/Problems-332896150
+status: draft
+---
 ## Pourquoi ?
 
 Parfois vous avez des problèmes avec une seule machine qui est derrière un serveur Varnish. Vous utilisez peut-être un director de type round-robin ou même random, donc c'est pas toujours évident de savoir quel backend génère l'erreur en cours.

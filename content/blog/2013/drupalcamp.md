@@ -1,12 +1,14 @@
-Title: DrupalCamp Montréal 2013
-Date: 2013-10-31
-Category: DrupalMontréal
-Tags: Contribution, Conférence
-Slug: drupalcamp-montreal
-Summary: Petit résumé du camp. Les bons coups, les mauvais, les coups de coeurs. Point de vue d'un administrateur de l'organisation.
+---
+title: DrupalCamp Montréal 2013
+language: fr
+date: 2013-10-31
+category: DrupalMontréal
+tags: Contribution, Conférence
+slug: drupalcamp-montreal
+summary: Petit résumé du camp. Les bons coups, les mauvais, les coups de coeurs. Point de vue d'un administrateur de l'organisation.
 cover: images/2013/drupalcamp.jpg
-PictureCopyrights: https://plus.google.com/117813537754214398967/posts
-
+pictureCopyrights: https://plus.google.com/117813537754214398967/posts
+---
 Encore cette année, je pense pouvoir dire que Montréal a eu la chance d'accueillir un merveilleux camp relié à Drupal. Nous (l'équipe de DrupalMontreal) avons travaillé très fort depuis le mois de mai passé pour préparer cet événement. Toujours de mon point de vue, nous avons eu des bons coups, mais aussi des moins bons coups. 
 
 ### Panel sur le web ouvert

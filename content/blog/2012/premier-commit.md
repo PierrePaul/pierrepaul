@@ -1,11 +1,13 @@
-Title: Premier commit
-Date: 2012-09-28
-Category: Contribution
-Slug: premier-commit
-Summary: Dur à croire, moi qui est un fervent utilisateur de Drupal, jusqu'à ce jour je n'avais jamais publié de modules ou fait de rustine(patch). C'est maintenant chose faite!
+---
+title: Premier commit
+language: fr
+date: 2012-09-28
+category: Contribution
+slug: premier-commit
+summary: Dur à croire, moi qui est un fervent utilisateur de Drupal, jusqu'à ce jour je n'avais jamais publié de modules ou fait de rustine(patch). C'est maintenant chose faite!
 cover: images/2012/I-have-no-idea-what-I-am-doing.jpg
-Tags: Open-source, Drupal
-
+tags: Open-source, Drupal
+---
 <p>Dur à croire, moi qui est un fervent utilisateur de Drupal, jusqu'à ce jour je n'avais jamais publié de modules ou fait de rustine(patch). C'est maintenant chose faite!</p>
 <p>J'ai publié il y a deux semaines une petite rustine pour Views. Plus spécifiquement, un nouveau champs qui permet de filtrer les résultats de la vue. 
 Il y avait cependant un petit problème, lorsque le champs était exposé (il ne sert pas à grand chose s'il n'est pas exposé, à mon avis), on ne pouvait utilisé l'opérateur "Contains any word".

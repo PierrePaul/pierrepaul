@@ -1,10 +1,12 @@
-Title: Gitlab6 
-Date: 2013-09-17
-Tags: Git
-Slug: gitlab6 
-Category: DevOps
+---
+title: Gitlab6 
+language: fr
+date: 2013-09-17
+tags: Git
+slug: gitlab6 
+category: DevOps
 cover: images/2013/gitlab6.png
-
+---
 Ce n'est pas la première fois que je parle de [Gitlab](/2013/gitlabhq.html), mais cete fois ci, c'est un peu spécial. La version 6 à été mise en ligne pendant mes vacances (le 20 Aout pour être exact) et c'est vraiment une _release_ majeure. Les groupes et la gestion des groupes a été repensée. La notion d'équipe (Teams) a été retirée au profit des groupes. C'est maintenant possible d'avoir des _snippets_ de code par utilisateurs plutôt que par projets. La *feature* la plus importante par contre, c'est sans nul doute la performance. 
 
 La nouvelle version est incroyablement rapide, du moins pour ceux qui ont testé les anciennes versions. On peut maintenant s'attendre à ce que chaque page prenne environ 700ms à charger. 

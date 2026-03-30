@@ -1,11 +1,13 @@
-Title: Pelican 
-Date: 2013-07-01
-Tags: Python
-Slug: pelican 
-Category: /dev/random
+---
+title: Pelican 
+language: fr
+date: 2013-07-01
+tags: Python
+slug: pelican 
+category: /dev/random
 cover: images/2013/pelican.jpg
-PictureCopyrights: http://poseidonsimons-s.deviantart.com/art/pelican-surfing-62018714 
-
+pictureCopyrights: http://poseidonsimons-s.deviantart.com/art/pelican-surfing-62018714 
+---
 <p>Bon, pour les habitués, vous aurez remarqué que ce blogue a une allure quelque peu différente. Pour le plaisir, j'ai décidé de jouer un peu avec <a href="http://blog.getpelican.com/">Pelican</a> qui est un générateur de HTML (oui, du HTML pur). Ca peut sembler très bizarre, de nos jours, de vouloir mettre de côté un système comme Wordpress Drupal ou même Django qui sont plus ou moins (selon la solution) fait pour remplir les besoins d'un simple blogue comme celui ci. </p>
 <p>C'est cependant un choix logique, rien n'est plus rapide qu'une page HTML simple. Un autre problème que je voyais souvent en utilisant une solution spécialisée, c'était la maintenance. À l'origine, un blogue devrait permettre de créer des articles, de les publier ou non et d'afficher en liste chacun de ses articles. </p>
 <p>Mon point important, c'est que le système doit permettre l'ajout et la modification d'articles rapidement et facilement. Dans mon cas, je suis un avide fan de <a href="http://en.wikipedia.org/wiki/Vim_(text_editor)">Vim</a>, alors c'est beaucoup plus naturel pour moi d'écrire mes articles directement dans Vim plutôt que dans la navigateur. Vim me permet d'écrire plus rapidement et avec moins de distractions.</p>

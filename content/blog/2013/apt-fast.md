@@ -1,10 +1,12 @@
-Title: Apt-fast 
-Date: 2013-07-03
-Slug: apt-fast
-Category: Sysadmin
+---
+title: Apt-fast 
+language: fr
+date: 2013-07-03
+slug: apt-fast
+category: Sysadmin
 cover: images/2013/lightning.jpg
-PictureCopyrights: http://daxxe.deviantart.com/art/Lightning-Power-208734013
-
+pictureCopyrights: http://daxxe.deviantart.com/art/Lightning-Power-208734013
+---
 <p>Si vous travaillez sur une plateforme ubuntu ou si vous avez des serveurs ubuntu, beaucoup trop souvent vous avez à faire <code>apt-get install mon_super_package_x</code>. À la longue, vous perdez beaucoup moins de temps que ceux qui compilent leur propres paquets, mais c'est du temps qui s'empile petit peu à petit peu.</p>
 <p>Je suis recemment tombé sur une petite application nommé <em>apt-fast</em>. Un peu comme les "download accelerators" du bon vieux temps, apt-fast sectionne le téléchargement de chaque fichier en petits morceaux qui peuvent être téléchargés de plusieurs sources. L'application utilise les mêmes sources qui sont définies dans apt-get.</p>
 <h3>Installation</h3>

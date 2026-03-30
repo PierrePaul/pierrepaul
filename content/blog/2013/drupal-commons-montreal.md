@@ -1,10 +1,12 @@
-Title: Drupal Commons 
-Date: 2012-11-25 
-Category: Contribution
-Tags: Drupal, Open-source 
-Slug: drupal-commons-montreal 
+---
+title: Drupal Commons 
+language: fr
+date: 2012-11-25 
+category: Contribution
+tags: Drupal, Open-source 
+slug: drupal-commons-montreal 
 cover: images/2012/drupal-commons.jpg
-
+---
 <p>Depuis quelques semaines déjà, je travaille tant que possible sur <a href="https://drupal.org/project/commons">Drupal Commons</a>. Cette distribution remplacera très bientôt ce qui est déjà disponible sur http://groups.drupal.org.
 Groups (ou Commons) permet aux utilisateurs de créer des groupes (heh oui!), des événements et des pages Wiki associés à leur groupe. Ce site est essentiel présentement à l'écosystème de la communauté (locale et mondiale).</p>
 <p>C'est grâce à ce site que des milliers d'organisations locales permettre d'avoir un peu de visibilité et aide à fournir une base d'organisation à ceux-ci. Comme certains le sachent, j'ai été élus tout récemment au conseil d'administration de la branche montréalaise. Mon rôle dans l'organisation est administrateur, dédié à ce que l'on appele "Community Outreach". En gros, du moins de la manière que je l'ai comprise, je suis responsable de créer des événements et d'ouvrir notre petite communauté aux autres communautées montréalaise et vice-versa.</p>

@@ -1,10 +1,12 @@
-Title: DrupalCamp Montréal 2013, petit pain dans le four 
-Date: 2013-08-25
-Category: DrupalMontréal
-Tags: DrupalMontreal, Événement
-Slug: drupalcamp-montreal-2013-init
+---
+title: DrupalCamp Montréal 2013, petit pain dans le four 
+language: fr
+date: 2013-08-25
+category: DrupalMontréal
+tags: DrupalMontreal, Événement
+slug: drupalcamp-montreal-2013-init
 cover: images/2013/drupalcampmontreal2012-group.jpg
-
+---
 Depuis octobre passé je suis un des administrateurs de l'Association Drupal Montréal. Cette association a été mise sur place, principalement, pour aider à la planification d'événements reliés à Drupal dans la région métropolitaine tout au long de l'année. Quoique je sois déçu de ne pas avoir eu plus de temps pour faire de plus gros événements à chaque mois, je suis quand même très fier de vous annoncez que la préparation du DrupalCamp Montréal se déroule très bien.
 
 L'événement aura lieux à l'UQAM, plus spéfiquement au [Coeur des Sciences (station Place des Arts)](http://goo.gl/maps/oAuSj). Nous aurons l'agora Hydro-Québec ainsi que la Chaufferie (les deux salles centrales du Coeurs des Sciences, à mon avis) à notre disposition pour toute la journée du samedi.

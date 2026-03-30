@@ -1,10 +1,12 @@
-Title: Heroku 
-Date: 2013-06-18 
-Category: DevOps
-Tags: Python
-Slug: heroku 
+---
+title: Heroku 
+language: fr
+date: 2013-06-18 
+category: DevOps
+tags: Python
+slug: heroku 
 cover: images/2013/heroku.jpg
-
+---
 <p>Depuis environ 6 mois que je cherche une bonne solution devops qui serait assez flexible et assez puissante pour n'importe quel type de projet, tout en restant abordable. 
 Un peu par hasard, je suis tombé sur <a href="http://get.heroku.com">Heroku</a>. J'avais déjà vu le nom passer dans les mailing lists et dans les nouvelles reliées au devops, mais il n'y a que 24 heures dans une journée et je ne lui ai pas donné le temps qu'il méritait. </p>
 <p>Je commence par un bémol tout de suite, afin de vous évitez de perdre du temps, Heroku ne supporte pas officiellement PHP. Heroku est une belle plateforme pour le développeur qui veut faire du python sans avoir à apprendre comment configurer apache pour servir ses sites. C'est aussi parfait pour le petit développeur pauvre qui cherche une solution pas cher (c'est gratuit, pour 1 serveur). Je ne recommanderais pas le système pour de la production (ceux qui le font, ont beaucoup de fonds).</p>

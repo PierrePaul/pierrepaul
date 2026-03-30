@@ -1,4 +1,5 @@
 ---
+language: fr
 title: Studio Qi, c'est qui?
 date: 2014-12-23
 category: StudioQi

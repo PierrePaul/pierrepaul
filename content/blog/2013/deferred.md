@@ -1,10 +1,12 @@
-Title: Deferred 
-Date: 2013-07-09
-Slug: deferred
-Category: Javascript
+---
+title: Deferred 
+language: fr
+date: 2013-07-09
+slug: deferred
+category: Javascript
 cover: images/2013/clock.jpg
-PictureCopyrights: http://yellowcandyfloss.deviantart.com/art/Clock-289959263
-
+pictureCopyrights: http://yellowcandyfloss.deviantart.com/art/Clock-289959263
+---
 <p>Je me suis souvent retrouvé dans une situation où je devais gérer plusieurs animations jquery qui dépendaient des autres.
 Example classique, je dois cacher 4 div sur 8 et remettre les bonnes classes CSS 'odd' et 'even'. </p>
 <p>En temps normal on pourrait penser que ce code ferait le boulot :</p>

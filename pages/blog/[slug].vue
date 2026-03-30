@@ -1,6 +1,6 @@
 <template>
   <div class="blog article">
-    <v-row>
+    <v-row v-if="article">
       <v-col cols="12" style="padding: 0">
         <v-img :src="article.cover" v-if="article.cover" alt="">
           <template v-if="article.pictureCopyrights">
@@ -12,62 +12,53 @@
         </v-img>
       </v-col>
     </v-row>
-    <v-container>
+    <v-container v-if="article" class="pa-4" fluid>
       <v-row>
         <v-col cols="12">
-          <h1>{{ article.title }}</h1>
-          <p style="font-size: 0.9rem;">{{ article.date|formatDate }}</p>
-          <nuxt-content :document="article" />
+          <div class="pa-4">
+            <h1>{{ article.title }}</h1>
+            <p style="font-size: 0.9rem;">{{ formatDate(article.date) }}</p>
+            <ContentRenderer :value="article" />
+          </div>
         </v-col>
       </v-row>
-
     </v-container>
   </div>
 </template>
 
-<script>
+<script setup>
+const route = useRoute()
+const { data: article } = await useAsyncData(`blog-${route.params.slug}`, async () => {
+  return await queryContent('blog')
+    .where({ slug: route.params.slug })
+    .findOne()
+})
 
-export default {
-  async asyncData ({ $content, params }) {
-    const articles = await $content('blog', {deep: true}).where({'slug': params.slug}).fetch()
-    const article = articles[0]
-    return {
-      article
+useHead({
+  title: article.value?.title,
+  meta: [
+    {
+      name: 'description',
+      content: article.value?.summary
+    },
+    {
+      property: 'og:title',
+      content: article.value?.title
+    },
+    {
+      property: 'og:description',
+      content: article.value?.summary
+    },
+    {
+      property: 'og:image',
+      content: article.value?.cover
     }
-  },
-  filters: {
-    formatDate: function(date) {
-      const dateFormatted = date.slice(0, 10)
-      return dateFormatted
-    }
-  },
-  head() {
-    return {
-      title: this.article.title,
-      meta: [
-        {
-          hid: 'description',
-          name: 'description',
-          content: this.article.summary
-        },
-        {
-          hid: 'og:title',
-          name: 'og:title',
-          content: this.article.title
-        },
-        {
-          hid: 'og:description',
-          name: 'og:description',
-          content: this.article.summary
-        },
-        {
-          hid: 'og:image',
-          name: 'og:image',
-          content: this.article.cover
-        }
-      ]
-    }
-  }
+  ]
+})
+
+const formatDate = (date) => {
+  if (!date) return ''
+  return date.slice(0, 10)
 }
 </script>
 <style>
@@ -99,8 +90,5 @@ a.cover-copyright {
 }
 .v-application .article a:hover {
   color: #ff3a00;
-}
-.article img {
-  max-width: 100%;
 }
 </style>

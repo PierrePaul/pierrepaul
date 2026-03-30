@@ -51,7 +51,7 @@
       <v-col cols="12">
         <h2 id="me" class="text-h2">{{$t('index.me')}}</h2>
       </v-col>
-      <v-col cols="12" v-if="$i18n.locale === 'en'" class="text-body-1">
+      <v-col cols="12" v-if="locale === 'en'" class="text-body-1">
         <p>As said earlier, I started off as a web developer, following CEGEP, where I studied "informatique de gestion" and then one year at the ETS. After my two first years as a professional web developer, I started getting really interested in system administration. This attraction helped me get a better understanding of the low level packages that would be used later on to deliver faster, more responsive web applications.</p>
         <p>From June 2013 to November 2016, I've been the main Sysadmin at Pheromone, managing a not so small cluster of servers. Some being VMWare, others being OpenVZ contexts while others were Amazon EC2.</p>
         <p>From November 2016 to May 2018, I was promoted CTO to a new Pheromone subentity named StudioQi, focused on creating games.</p>
@@ -59,7 +59,7 @@
         <p>In 2019, with Edouard and Francois, we decided to create a new company, called FIXRS, where developers no longer need to choose between family and work.</p>
         <p>In 2024, I decide to leave the entrepreneur world to join full time the <a href="https://www.banq.qc.ca">BAnQ</a> team full time, as a Drupal team lead.</p>
       </v-col>
-      <v-col cols="12" v-if="$i18n.locale === 'fr'" class="text-body-1">
+      <v-col cols="12" v-if="locale === 'fr'" class="text-body-1">
         <p>J'ai commencé ma carrière en tant que développeur web, suivant ma formation en informatique de gestion au collège de Maisonneuve et d'une année à l'ETS en génie informatique.</p>
         <p>Après mes deux premières années, j'ai commencé à m'intéresser sérieusement à l'administration de système.</p>
         <p>Cette attirance soudaine venait principalement du besoin de rendre mes applications PHP plus rapides et par le fait même, plus agréables.</p>
@@ -74,13 +74,13 @@
       <v-col>
         <h2 id="contact" class="text-h2">{{$t('index.contact')}}</h2>
       </v-col>
-      <v-col cols="12" v-if="$i18n.locale === 'fr'" class="text-body-1">
+      <v-col cols="12" v-if="locale === 'fr'" class="text-body-1">
         <p>Vous pouvez me contacter via info[@]pierre-paul.com (<a href="/pierrepaul.pgp" target="_blank">clef PGP</a>) ou via <a href="https://www.linkedin.com/in/pierrepaull/" target="_blank">LinkedIn</a>.</p>
         <p>Pour mon courriel professionnel, pp.lefebvre[@]banq.qc.ca <a href="/banq.pgp" target="_blank">ma clef est ici</a>.</p>
         <p>Ou encore via <a rel="me" href="https://mastodon.social/@pierrepaul">Mastodon</a>.</p>
         <p>Je suis aussi <a href="https://calendar.app.google/aUUGZx9TunZZJo4B6">disponible le matin, pour prendre un petit café et jaser</a>.</p>
       </v-col>
-      <v-col cols="12" v-if="$i18n.locale === 'en'" class="text-body-1">
+      <v-col cols="12" v-if="locale === 'en'" class="text-body-1">
         <p>You can contact me via info[@]pierre-paul.com (<a href="/pierrepaul.pgp" target="_blank">PGP key</a>) ou via <a href="https://www.linkedin.com/in/pierrepaull/" target="_blank">LinkedIn</a>.</p>
         <p>For my professional email pp.lefebvre[@]banq.qc.ca you can get my <a href="/banq.pgp" target="_blank">PGP key here</a>.</p>
         <p>Or on <a rel="me" href="https://mastodon.social/@pierrepaul">Mastodon</a>.</p>
@@ -90,17 +90,27 @@
   </v-container>
 </template>
 
-<script>
-import IndexExpertise from "../components/IndexExpertise";
-import Project from "../components/Project";
-import IndexBlog from "../components/IndexBlog";
-export default {
-  async asyncData ({ $content, app }) {
-    const articles = await $content('blog', {deep: true}).where({ 'status': 'published', 'language': app.i18n.locale }).sortBy('date', 'desc').limit(3).fetch()
-    return {
-      articles
-    }
-  },
-  components: {IndexBlog, Project, IndexExpertise}
-}
+<script setup>
+const { locale } = useI18n()
+const { data: articles } = await useAsyncData(`articles-${locale.value}`, async () => {
+  const result = await queryContent('blog')
+    .where({ status: 'published', language: locale.value })
+    .sort({ date: -1 })
+    .limit(3)
+    .find()
+  return result
+})
 </script>
+
+<style scoped>
+.text-h1 {
+  font-size: 6rem !important;
+  font-weight: 300;
+  padding: 0;
+}
+.text-h2 {
+  font-size: 3rem !important;
+  font-weight: 300;
+  padding: 0;
+}
+</style>

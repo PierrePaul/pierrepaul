@@ -1,13 +1,15 @@
-Title: Vagrant
-Date: 2013-10-10
-Category: Devops 
-Tags: Vagrant
-Slug: vagrant
+---
+title: Vagrant
+language: fr
+date: 2013-10-10
+category: Devops 
+tags: Vagrant
+slug: vagrant
 cover: images/2013/vagrant.jpg
-PictureCopyrights: http://hque1011.deviantart.com/art/The-Wanderer-172001266
-PictureCopyrightsText: The Wanderer
-Status: draft
-
+pictureCopyrights: http://hque1011.deviantart.com/art/The-Wanderer-172001266
+pictureCopyrightsText: The Wanderer
+status: draft
+---
 Vagrant est ce qu'on appele en bon français, un *wrapper* qui supporte différends types de virtualisation. L'idée principale derrière le projet, est de donner les outils aux développeurs de tester leurs applications sur un environnement se rapprochant le plus possible des serveurs de production. Avec vagrant en place, l'excuse *mais ça marche sur mon poste* ne devrait plus être valide.
 
 Par défaut Vagrant utilise VirtualBox, mais d'autres systèmes (appelés *provider*) peuvent être utilisés, notamment lxc qui est un système de contextualisation.

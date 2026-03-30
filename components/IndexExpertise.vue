@@ -13,11 +13,8 @@
     <v-card-subtitle>{{ subtitle }}</v-card-subtitle>
   </v-card>
 </template>
-<script>
-export default {
-  component: true,
-  props: ['title', 'subtitle']
-}
+<script setup>
+const props = defineProps(['title', 'subtitle'])
 </script>
 <style scoped>
 .v-card {

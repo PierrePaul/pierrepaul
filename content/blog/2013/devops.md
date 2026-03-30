@@ -1,10 +1,12 @@
-Title: DevOps
-Date: 2013-10-30
-Category: DevOps 
-Tags: DevOps Montreal
-Slug: devops
+---
+title: DevOps
+language: fr
+date: 2013-10-30
+category: DevOps 
+tags: DevOps Montreal
+slug: devops
 cover: images/2013/devops.png
-
+---
 Sur le groupe de Montréal Python, j'étais tombé sur l'annonce que DevOps Montréal recommencerait à faire des sessions mensuelles. N'ayant jamais été à une de leur rencontre, j'avais quelques appréhensions. 
 
 Le DevOps est un sujet très populaire depuis quelques années et beaucoup se donne le titre eux même, souvent pour justifier une augmentation de salaire vis-à-vis la direction. J'ai souvent vu des personnes s'auto-proclamer DevOps, simplement parce qu'ils compilaient (minify) leur javascript avant de mettre en ligne. 

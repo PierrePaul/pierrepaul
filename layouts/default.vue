@@ -1,115 +1,105 @@
 <template>
-  <v-app dark>
+  <v-app>
     <v-btn
-      dark
+      icon="mdi-menu"
       @click.stop="drawer = !drawer"
       class="mobile-drawer d-lg-none"
-    >
-      <v-icon v-text="'mdi-menu'"></v-icon>
-    </v-btn>
+    ></v-btn>
     <v-navigation-drawer
-      app
       color="lighten-3"
-      width="325"
+      width="260"
       v-model="drawer"
     >
-      <div class="brand"><nuxt-link to="/">Pierre Paul</nuxt-link></div>
+      <div class="brand">
+        <NuxtLink to="/">Pierre Paul</NuxtLink>
+      </div>
       <v-list>
-        <v-list-item-group>
-          <v-list-item
-            v-for="(item, i) in items"
-            :key="i"
-            :to="{name: item.to + '___' + $i18n.locale, hash: item.hash}"
-            router
-            class="nav-links"
-          >
-            <v-list-item-icon>
-              <v-icon v-text="item.icon"></v-icon>
-            </v-list-item-icon>
-            <v-list-item-content>
-              <v-list-item-title v-text="$t(item.title)" class="title"></v-list-item-title>
-            </v-list-item-content>
-          </v-list-item>
-        </v-list-item-group>
+        <v-list-item
+          v-for="(item, i) in items"
+          :key="i"
+          :to="localePath({ name: item.to, hash: item.hash })"
+          :prepend-icon="item.icon"
+          :title="$t(item.title)"
+          class="nav-links"
+        >
+        </v-list-item>
       </v-list>
     </v-navigation-drawer>
     <div class="language-switcher" v-if="availableLocales.length > 0">
-      <nuxt-link
+      <NuxtLink
         v-for="locale in availableLocales"
         :key="locale.code"
-        :to="switchLocalePath(locale.code)">{{ locale.name }}</nuxt-link>
-
+        :to="switchLocalePath(locale.code)"
+      >{{ locale.name }}</NuxtLink>
     </div>
     <v-main>
-      <v-container fluid>
-        <nuxt />
+      <v-container fluid :class="{ 'pa-0': isBlogArticle }">
+        <slot />
       </v-container>
     </v-main>
   </v-app>
 </template>
 
-<script>
-export default {
-  data () {
-    return {
-      drawer: false,
-      items: [
-        {
-          icon: 'mdi-home',
-          title: 'nav.introduction',
-          to: 'index',
-          hash: "#top"
-        },
-        {
-          icon: 'mdi-xml',
-          title: 'nav.expertise',
-          to: 'index',
-          hash: '#expertise'
-        },
-        {
-          icon: 'mdi-folder-star',
-          title: 'nav.projects',
-          to: 'index',
-          hash: '#projects',
-        },
-        {
-          icon: 'mdi-human-handsup',
-          title: 'nav.me',
-          to: 'index',
-          hash: '#me'
-        },
-        {
-          icon: 'mdi-at',
-          title: 'nav.contact',
-          to: 'index',
-          hash: '#contact',
-        },
-        {
-          icon: 'mdi-book-outline',
-          title: 'nav.blog',
-          to: 'blog'
-        },
-      ],
-      right: true,
-      rightDrawer: false,
-      title: 'PierrePaul'
-    }
+<script setup>
+const { locale, locales, t } = useI18n()
+const switchLocalePath = useSwitchLocalePath()
+const localePath = useLocalePath()
+const route = useRoute()
+const display = import.meta.client ? useDisplay() : { mdAndDown: ref(false) }
+
+const isBlogArticle = computed(() => route.name?.toString().startsWith('blog-slug'))
+
+const drawer = ref(false)
+const items = [
+  {
+    icon: 'mdi-home',
+    title: 'nav.introduction',
+    to: 'index',
+    hash: "#top"
   },
-  computed: {
-    mini() {
-      return this.$vuetify.breakpoint.mdAndDown;
-    },
-    availableLocales () {
-      if (this.$route.name === 'blog-slug___en' || this.$route.name === 'blog-slug___fr') {
-        return [];
-      }
-      return this.$i18n.locales.filter(i => i.code !== this.$i18n.locale)
-    }
+  {
+    icon: 'mdi-xml',
+    title: 'nav.expertise',
+    to: 'index',
+    hash: '#expertise'
   },
-  mounted() {
-    this.drawer = !this.mini;
+  {
+    icon: 'mdi-folder-star',
+    title: 'nav.projects',
+    to: 'index',
+    hash: '#projects',
+  },
+  {
+    icon: 'mdi-human-handsup',
+    title: 'nav.me',
+    to: 'index',
+    hash: '#me'
+  },
+  {
+    icon: 'mdi-at',
+    title: 'nav.contact',
+    to: 'index',
+    hash: '#contact',
+  },
+  {
+    icon: 'mdi-book-outline',
+    title: 'nav.blog',
+    to: 'blog'
+  },
+]
+
+const availableLocales = computed(() => {
+  if (route.name?.toString().startsWith('blog-slug')) {
+    return []
   }
-}
+  return locales.value.filter(i => i.code !== locale.value)
+})
+
+onMounted(() => {
+  if (display && display.mdAndDown) {
+    drawer.value = !display.mdAndDown.value
+  }
+})
 </script>
 
 <style lang="scss">
@@ -119,8 +109,15 @@ export default {
   top: 10px;
   z-index: 999;
 }
-nav .theme--light.v-list-item.nav-links, nav .theme--light.v-list-item:not(.v-list-item--active):not(.v-list-item--disabled), nav .theme--light.v-icon {
-  color: whitesmoke !important;
+.v-navigation-drawer,
+.v-navigation-drawer .v-list-item,
+.v-navigation-drawer .v-list-item .v-icon,
+.v-navigation-drawer .brand,
+.v-navigation-drawer .brand a {
+  color: white !important;
+}
+.v-navigation-drawer .v-list-item--active .v-list-item__overlay {
+  background: transparent;
 }
 .language-switcher {
   position: fixed;
@@ -161,7 +158,11 @@ body {
 .v-application {
   font-family: 'Ubuntu';
 }
-h2 {
+h1, h2, h3, .text-h1, .text-h2, .text-h3 {
+  font-family: 'Roboto', sans-serif !important;
+  padding: 0.5em 0 0.5em 0;
+}
+h2, .text-h2 {
   color: #666;
   font-weight: 200;
   font-size: 2em;
@@ -181,18 +182,19 @@ a.blog-link {
   text-align: center;
   width: 100%;
   padding: 1em;
-  color: whitesmoke;
 }
-.v-application .brand a {
-  color: whitesmoke;
+img {
+  max-width: 100%;
+  height: auto;
 }
-h1, h2, h3 {
-  padding: 0.5em 0 0.5em 0;
+ol, ul {
+  padding-left: 2rem;
 }
+
 ol {
   margin-bottom: 1rem;
   border: dotted #666;
-  padding: 0.5rem;
+  padding: 0.5rem 2rem;
   li {
     &::marker {
       color: #666;
@@ -202,6 +204,14 @@ ol {
 }
 .theme--light.v-application code {
   background-color: #f5f2f0;
+}
+.theme--light.v-application .nuxt-content-highlight pre,
+.github-light {
+  background-color: rgb(34 39 41 / 0.07);
+  padding: 1em;
+  border-radius: 5px;
+  overflow-x: auto;
+  margin-bottom: 1em;
 }
 .theme--light.v-application .nuxt-content-highlight pre code {
   padding: 0;

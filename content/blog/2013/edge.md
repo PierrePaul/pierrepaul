@@ -1,10 +1,12 @@
-Title: Ubuntu Edge
-Date: 2013-07-27
-Category: /dev/random
-Tags: Ubuntu, Open-source
-Slug: ubuntu-edge
+---
+title: Ubuntu Edge
+language: fr
+date: 2013-07-27
+category: /dev/random
+tags: Ubuntu, Open-source
+slug: ubuntu-edge
 cover: images/2013/edge.jpg
-
+---
 Chaque mois un nouveau modèle de téléphone attaque le marché  avec des nouvelles fonctionnalités, du _hardware_ spécial qui devrait amener les utilisateurs à acheter leur nouvel appareil à 600$. La très grande majorité de ces téléphones fonctionnent avec Android, mais ce mois-ci nous avons quelque chose de spécial.
 
 Cannonical, la compagnie derrière le système d'opération Open-source Ubuntu, a lancé une campagne [IndieGogo](http://igg.me/at/ubuntuedge/x/3000081), système similaire à kickstarter afin de trouver des fonds et faire une première recherche de clientelle avant de passer à la production des téléphones. La compagne essait d'aller chercher un montant record de *32 millions* en aussi peu que 30 jours.

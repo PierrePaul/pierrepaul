@@ -1,12 +1,14 @@
-Title: Amazon Partie 1
-Date: 2013-11-19
-Category: DevOps
-Tags: Amazon
-Slug: amazon-partie-1
-Summary: Introduction à Amazon. Nous allons voir la base, les différents systèmes, les limites et tous les petits trucs à penser sur leurs systèmes.
+---
+title: Amazon Partie 1
+language: fr
+date: 2013-11-19
+category: DevOps
+tags: Amazon
+slug: amazon-partie-1
+summary: Introduction à Amazon. Nous allons voir la base, les différents systèmes, les limites et tous les petits trucs à penser sur leurs systèmes.
 cover: images/2013/amazon.png
-Status: draft
-
+status: draft
+---
 Cette série de trois articles vont survoler chacun des aspects les plus importants d'Amazon, vous permettant de lancer un nouveau projet sur leurs systèmes. Amazon un bon nombre de produits très pointus essayant de combler le mieux possible un problème technologique très précis. Les interfaces Web sont toujours en développement, retravaillant sans cesse l'expérience utilisateur (UX). Certains détestent, beaucoup n'aiment pas le changement, surtout lorsqu'ils sont aussi fréquents.
 
 ## Table des matières
