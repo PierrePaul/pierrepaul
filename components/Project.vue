@@ -12,7 +12,7 @@
         <v-card-title v-else>{{ name }}</v-card-title>
       </v-col>
     </v-row>
-    <v-card-subtitle>{{ description }}</v-card-subtitle>
+    <v-card-text>{{ description }}</v-card-text>
   </v-card>
 </template>
 <script setup>
@@ -20,7 +20,7 @@ const props = defineProps(['name', 'description', 'link', 'image'])
 </script>
 <style scoped>
 .v-card {
-  height: 950px;
+  min-height: 450px;
   padding: 0;
 
   .v-card-subtitle {
