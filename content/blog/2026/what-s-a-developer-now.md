@@ -13,20 +13,26 @@ language: en
 ---
 
 I recently watched this [video on YouTube by Primeagen + Mo Bitar](https://www.youtube.com/watch?v=_vB0PDzaa7I).
-Like him or not, it's a video that resonated deeply with me.
-A few key takeaways are summarized below.
 
-### Key Takeaways from "I was a 10x engineer. Now I'm useless."
+::YouTube{id="_vB0PDzaa7I"}
+::
 
-1. "We feel disconnected from the product we are building, making it hard to sell, making it hard to care."
-2. "Technical skill matters, but so do communication, consistency, and resilience."
-3. "Engineering identity can be fragile when your role shifts from heroics to maintenance or collaboration."
-4. "The era of the hero developer is being replaced by the era of the resilient collaborator."
-5. "If you don't understand the value of what you're building, you're just writing code in a vacuum."
-6. "AI isn't replacing developers; it's replacing the developer who only knows how to write code."
-7. "The hardest part of modern engineering isn't the syntax, it's managing the complexity and the human element."
+Like them or not, it's a video that resonated deeply with me.
+The video is almost an hour, so here's a few key takeaways.
 
----
+## "It's highly addictive"
+
+Honestly, it's a game-changer. I'm shipping features faster than ever, what used to be a multi-week slog now takes just a couple of days.
+I'm finally starting projects that I used to talk myself out of, either because the ROI wasn't there or, let's be real, I was just too lazy to deal with the setup.
+
+Case in point: this blog.
+It’s been languishing on Nuxt 2 for way longer than it should have, mostly because I couldn't find the energy to face the migration.
+
+## "You can't review AI code."
+
+I want to say I review the code, but that’s a lie.
+You start with good intentions, but as the AI consistently delivers 'good enough' results, your guard drops.
+By the time the code reaches a certain scale, you’re no longer a reviewer. You’re just a passenger.
 
 ## "We feel disconnected from the product we are building, making it hard to sell, making it hard to care."
 

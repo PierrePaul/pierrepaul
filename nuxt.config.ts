@@ -77,6 +77,7 @@ export default defineNuxtConfig({
     }
   },
   content: {
+    components: true,
     highlight: {
       theme: 'github-light',
       langs: [
