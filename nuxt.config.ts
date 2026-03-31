@@ -81,7 +81,10 @@ export default defineNuxtConfig({
       theme: 'github-light',
       langs: [
         'python',
-        'php'
+        'php',
+        'bash',
+        'md',
+        'typescript'
       ]
     }
   },
