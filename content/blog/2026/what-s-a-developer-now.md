@@ -6,8 +6,8 @@ tags: AI
 slug: what-s-a-developer-now
 summary: With AI pushing new boundaries everyday, what's a Developer now?
 cover: /images/2026/what-s-a-developer.png
-pictureCopyrightsText:
-pictureCopyrights: 
+pictureCopyrightsText: Thank you AI for this suggestion...
+pictureCopyrights:
 status: published
 language: en
 ---
