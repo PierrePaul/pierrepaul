@@ -5,4 +5,4 @@ I'm a cool human being. You can refer to me as he/him. My first name is actually
 
 I like python, but I've worked a lot with PHP in the past. I'm also a very curious person.
 
-Feel free to browse my profile or e-mail me. Always open to a coffee chat.
+Feel free to browse my profile or e-mail me.
