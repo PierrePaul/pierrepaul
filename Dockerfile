@@ -12,6 +12,8 @@ FROM node:22-slim
 WORKDIR /src
 COPY --from=build /src/.output ./.output
 
+ARG GIT_REV=dev
+ENV NUXT_PUBLIC_VERSION=$GIT_REV
 ENV HOST 0.0.0.0
 EXPOSE 3000
 

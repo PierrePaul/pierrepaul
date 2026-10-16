@@ -85,11 +85,17 @@
         <p>Or on <a rel="me" href="https://mastodon.social/@pierrepaul">Mastodon</a>.</p>
       </v-col>
     </v-row>
+    <v-row>
+      <v-col cols="12" class="text-center text-caption text-medium-emphasis">
+        v{{ version }}
+      </v-col>
+    </v-row>
   </v-container>
 </template>
 
 <script setup>
 const { locale } = useI18n()
+const version = useRuntimeConfig().public.version.slice(0, 7)
 const { data: articles } = await useAsyncData(`articles-${locale.value}`, async () => {
   const result = await queryContent('blog')
     .where({ status: 'published', language: locale.value })

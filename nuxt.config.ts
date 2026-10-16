@@ -27,6 +27,11 @@ export default defineNuxtConfig({
       ]
     },
   },
+  runtimeConfig: {
+    public: {
+      version: 'dev',
+    },
+  },
   modules: [
     '@nuxt/content',
     '@nuxtjs/i18n',
